@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GuiModel dimension="2" viewDimension="3" guiView="MESH" currentStudyFeature="std1" currentNode="/mesh/mesh1" groupGlobalDefinitions="false">
+  <openWindows>
+    <string>MAINWINDOW</string>
+  </openWindows>
+</GuiModel>
+

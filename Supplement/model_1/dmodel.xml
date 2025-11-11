@@ -1,0 +1,2259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Model tag="Model2" name="model_1.mph">
+  <!-- User comments -->
+  <entityComments T="0">Untitled
+
+</entityComments>
+  <!-- Created by -->
+  <entityAuthor T="0"></entityAuthor>
+  <!-- Creation time -->
+  <entityCreationTime T="11">1510089358411</entityCreationTime>
+  <!-- Last modification time -->
+  <entityModifyTime T="11">1513341302374</entityModifyTime>
+  <!-- Updated by -->
+  <entityModifiedBy T="0"></entityModifiedBy>
+  <fontsize T="5">-1</fontsize>
+  <fontfamily T="0">automatic</fontfamily>
+  <comsolVersion T="0">COMSOL 5.3 (Build: 316)</comsolVersion>
+  <!-- Unit base system -->
+  <baseSystem T="0">SI</baseSystem>
+  <!-- Serial number -->
+  <srl T="0">15073108</srl>
+  <!-- File version -->
+  <savedInVersion T="5">1034</savedInVersion>
+  <!-- Local model file path -->
+  <modelPath T="0">C:/Work/Module/ETH_Physical_Modeling/Simulation_Projects_HS_2017/Topic_13_Deichmann_Scherrer/model_1.mph</modelPath>
+  <ModelParam tag="param" name="Parameters">
+    <!-- User comments -->
+    <entityComments T="0"></entityComments>
+    <!-- Created by -->
+    <entityAuthor T="0"></entityAuthor>
+    <!-- Creation time -->
+    <entityCreationTime T="11">1510089324043</entityCreationTime>
+  </ModelParam>
+  <PhysicsList tag="physics" name="Physics">
+    <!-- User comments -->
+    <entityComments T="0"></entityComments>
+    <!-- Created by -->
+    <entityAuthor T="0"></entityAuthor>
+    <!-- Creation time -->
+    <entityCreationTime T="11">1510089324043</entityCreationTime>
+    <Physics op="ElectromagneticWaves" tag="emw" name="Electromagnetic Waves, Frequency Domain">
+      <!-- User comments -->
+      <entityComments T="0"></entityComments>
+      <!-- Created by -->
+      <entityAuthor T="0"></entityAuthor>
+      <!-- Creation time -->
+      <entityCreationTime T="11">1510089327371</entityCreationTime>
+      <selection T="32" selection="LocalSelection" flags="16" selType="GEOMDIM">
+        <explicit dim="2" hDim="2" geom="/geom/geom1"/>
+      </selection>
+      <!-- Geometry -->
+      <geom T="50">/geom/geom1</geom>
+      <!-- Scope identifier -->
+      <identifier T="0">emw</identifier>
+      <PhysicsFieldList tag="field" name="List">
+        <!-- User comments -->
+        <entityComments T="0"></entityComments>
+        <!-- Created by -->
+        <entityAuthor T="0"></entityAuthor>
+        <!-- Creation time -->
+        <entityCreationTime T="11">1510089324820</entityCreationTime>
+        <PhysicsField tag="electricfield">
+          <!-- Node status -->
+          <entityFlags T="51">NOREMOVE|NORETAG|NODEACTIVATE</entityFlags>
+          <!-- Identifier -->
+          <applfieldID T="0">electricfield</applfieldID>
+          <!-- Component names -->
+          <components T="1">3,'Ex','Ey','Ez'</components>
+          <!-- Filed name -->
+          <fieldname T="0">E</fieldname>
+        </PhysicsField>
+      </PhysicsFieldList>
+      <FeatureInfoList tag="featureInfo" name="List">
+        <!-- User comments -->
+        <entityComments T="0"></entityComments>
+        <!-- Created by -->
+        <entityAuthor T="0"></entityAuthor>
+        <!-- Creation time -->
+        <entityCreationTime T="11">1510089324820</entityCreationTime>
+        <FeatureInfo tag="info" name="Equation View">
+          <!-- Node status -->
+          <entityFlags T="51">NOREMOVE|NODEACTIVATE</entityFlags>
+          <!-- User comments -->
+          <entityComments T="0"></entityComments>
+          <!-- Created by -->
+          <entityAuthor T="0"></entityAuthor>
+          <!-- Creation time -->
+          <entityCreationTime T="11">1510089327371</entityCreationTime>
+        </FeatureInfo>
+      </FeatureInfoList>
+      <PhysicsFeatureList tag="feature" name="List">
+        <!-- User comments -->
+        <entityComments T="0"></entityComments>
+        <!-- Created by -->
+        <entityAuthor T="0"></entityAuthor>
+        <!-- Creation time -->
+        <entityCreationTime T="11">1510089324820</entityCreationTime>
+        <PhysicsFeature op="WaveEquationElectric" tag="wee1" name="Wave Equation, Electric 1">
+          <!-- Node status -->
+          <entityFlags T="51">NOREMOVE|NODEACTIVATE</entityFlags>
+          <!-- User comments -->
+          <entityComments T="0"></entityComments>
+          <!-- Created by -->
+          <entityAuthor T="0"></entityAuthor>
+          <!-- Creation time -->
+          <entityCreationTime T="11">1510089324852</entityCreationTime>
+          <selection T="32" selection="XDLocalSelection" flags="17" selType="GEOMDIM">
+            <explicit dim="2" hDim="2" geom="/geom/geom1"/>
+          </selection>
+          <!-- Parameter values -->
+          <param T="33" param="DisplacementFieldModel" value="1|1,'RelativePermittivity'"></param>
+          <param T="33" param="omegap" value="1|1,'0'"></param>
+          <param T="33" param="f" value="1|1,'0'"></param>
+          <param T="33" param="omega0" value="1|1,'0'"></param>
+          <param T="33" param="damp" value="1|1,'0'"></param>
+          <param T="33" param="epsContrib" value="1|1,'0'"></param>
+          <param T="33" param="tau" value="1|1,'0'"></param>
+          <param T="33" param="coeffB" value="1|1,'0'"></param>
+          <param T="33" param="coeffC" value="1|1,'0'"></param>
+          <param T="33" param="epsilonBis_mat" value="1|1,'from_mat'"></param>
+          <param T="33" param="epsilonBis" value="9|1,'0'|1,'0'|1,'0'|1,'0'|1,'0'|1,'0'|1,'0'|1,'0'|1,'0'"></param>
+          <param T="33" param="epsilonPrim_mat" value="1|1,'from_mat'"></param>
+          <param T="33" param="epsilonPrim" value="9|1,'1'|1,'0'|1,'0'|1,'0'|1,'1'|1,'0'|1,'0'|1,'0'|1,'1'"></param>
+          <param T="33" param="delta_mat" value="1|1,'from_mat'"></param>
+          <param T="33" param="delta" value="1|1,'0'"></param>
+          <param T="33" param="n_mat" value="1|1,'from_mat'"></param>
+          <param T="33" param="n" value="9|1,'1'|1,'0'|1,'0'|1,'0'|1,'1'|1,'0'|1,'0'|1,'0'|1,'1'"></param>
+          <param T="33" param="ki_mat" value="1|1,'from_mat'"></param>
+          <param T="33" param="ki" value="9|1,'0'|1,'0'|1,'0'|1,'0'|1,'0'|1,'0'|1,'0'|1,'0'|1,'0'"></param>
+          <param T="33" param="epsilonr_mat" value="1|1,'from_mat'"></param>
+          <param T="33" param="epsilonr" value="9|1,'1'|1,'0'|1,'0'|1,'0'|1,'1'|1,'0'|1,'0'|1,'0'|1,'1'"></param>
+          <param T="33" param="tanDelta_mat" value="1|1,'from_mat'"></param>
+          <param T="33" param="tanDelta" value="1|1,'0'"></param>
+          <param T="33" param="epsilonInf_mat" value="1|1,'from_mat'"></param>
+          <param T="33" param="epsilonInf" value="9|1,'1'|1,'0'|1,'0'|1,'0'|1,'1'|1,'0'|1,'0'|1,'0'|1,'1'"></param>
+          <param T="33" param="ConstitutiveRelationH" value="1|1,'RelativePermeability'"></param>
+          <param T="33" param="murPrim_mat" value="1|1,'from_mat'"></param>
+          <param T="33" param="murPrim" value="1|1,'1'"></param>
+          <param T="33" param="murBis_mat" value="1|1,'from_mat'"></param>
+          <param T="33" param="murBis" value="1|1,'0'"></param>
+          <param T="33" param="mur_mat" value="1|1,'from_mat'"></param>
+          <param T="33" param="mur" value="9|1,'1'|1,'0'|1,'0'|1,'0'|1,'1'|1,'0'|1,'0'|1,'0'|1,'1'"></param>
+          <param T="33" param="sigma_mat" value="1|1,'from_mat'"></param>
+          <param T="33" param="sigma" value="9|1,'0'|1,'0'|1,'0'|1,'0'|1,'0'|1,'0'|1,'0'|1,'0'|1,'0'"></param>
+          <param T="33" param="rho0_mat" value="1|1,'from_mat'"></param>
+          <param T="33" param="rho0" value="1|1,'0'"></param>
+          <param T="33" param="alpha_mat" value="1|1,'from_mat'"></param>
+          <param T="33" param="alpha" value="1|1,'0'"></param>
+          <param T="33" param="Tref_mat" value="1|1,'from_mat'"></param>
+          <param T="33" param="Tref" value="1|1,'0'"></param>
+          <param T="33" param="coordinateSystem" value="1|1,'GlobalSystem'"></param>
+          <param T="33" param="minput_temperature_src" value="1|1,'userdef'"></param>
+          <param T="33" param="minput_temperature" value="1|1,'293.15[K]'"></param>
+          <param T="33" param="minput_pressure_src" value="1|1,'userdef'"></param>
+          <param T="33" param="minput_pressure" value="1|1,'1[atm]'"></param>
+          <param T="33" param="minput_electricfield_src" value="1|1,'userdef'"></param>
+          <param T="33" param="minput_electricfield" value="3|1,'0'|1,'0'|1,'0'"></param>
+          <param T="33" param="minput_magneticfield_src" value="1|1,'userdef'"></param>
+          <param T="33" param="minput_magneticfield" value="3|1,'0'|1,'0'|1,'0'"></param>
+          <param T="33" param="minput_magneticfluxdensity_src" value="1|1,'userdef'"></param>
+          <param T="33" param="minput_magneticfluxdensity" value="3|1,'0'|1,'0'|1,'0'"></param>
+          <param T="33" param="minput_velocity_src" value="1|1,'userdef'"></param>
+          <param T="33" param="minput_velocity" value="3|1,'0'|1,'0'|1,'0'"></param>
+          <param T="33" param="minput_frequency_src" value="1|1,'userdef'"></param>
+          <param T="33" param="minput_frequency" value="1|1,'root.freq'"></param>
+          <param T="33" param="minput_stress_src" value="1|1,'userdef'"></param>
+          <param T="33" param="minput_stress" value="9|1,'0'|1,'0'|1,'0'|1,'0'|1,'0'|1,'0'|1,'0'|1,'0'|1,'0'"></param>
+          <param T="33" param="minput_effectiveplasticstrain_src" value="1|1,'userdef'"></param>
+          <param T="33" param="minput_effectiveplasticstrain" value="1|1,'0'"></param>
+          <param T="33" param="minput_strainreferencetemperature_src" value="1|1,'userdef'"></param>
+          <param T="33" param="minput_strainreferencetemperature" value="1|1,'293.15[K]'"></param>
+          <param T="33" param="minput_concentration_src" value="1|1,'userdef'"></param>
+          <param T="33" param="minput_concentration" value="1|1,'0'"></param>
+          <param T="33" param="minput_numberdensity_src" value="1|1,'userdef'"></param>
+          <param T="33" param="minput_numberdensity" value="1|1,'0'"></param>
+          <param T="33" param="minput_relativehumidity_src" value="1|1,'userdef'"></param>
+          <param T="33" param="minput_relativehumidity" value="1|1,'0'"></param>
+          <param T="33" param="minput_currentdensity_src" value="1|1,'userdef'"></param>
+          <param T="33" param="minput_currentdensity" value="3|1,'0'|1,'0'|1,'0'"></param>
+          <param T="33" param="editModelInputs" value="1|1,'0'"></param>
+          <param T="33" param="StudyStep" value="1|1,'0'"></param>
+          <param T="33" param="showPhysicsSymbols" value="1|1,'1'"></param>
+          <!-- Feature dimension -->
+          <edim T="5">2</edim>
+          <!-- Flag indicating default feature -->
+          <default T="3">true</default>
+          <FeatureInfoList tag="featureInfo" name="List">
+            <!-- User comments -->
+            <entityComments T="0"></entityComments>
+            <!-- Created by -->
+            <entityAuthor T="0"></entityAuthor>
+            <!-- Creation time -->
+            <entityCreationTime T="11">1510089324867</entityCreationTime>
+            <FeatureInfo tag="info" name="Equation View">
+              <!-- Node status -->
+              <entityFlags T="51">NOREMOVE|NODEACTIVATE</entityFlags>
+              <!-- User comments -->
+              <entityComments T="0"></entityComments>
+              <!-- Created by -->
+              <entityAuthor T="0"></entityAuthor>
+              <!-- Creation time -->
+              <entityCreationTime T="11">1510089324867</entityCreationTime>
+            </FeatureInfo>
+          </FeatureInfoList>
+          <ModelEntityTag tag="DomainType">
+            <!-- List of tags -->
+            <values T="1">2,'VOID','GEOMETRY'</values>
+          </ModelEntityTag>
+          <PhysicsFeatureList tag="feature" name="List">
+            <!-- User comments -->
+            <entityComments T="0"></entityComments>
+            <!-- Created by -->
+            <entityAuthor T="0"></entityAuthor>
+            <!-- Creation time -->
+            <entityCreationTime T="11">1510089324867</entityCreationTime>
+          </PhysicsFeatureList>
+        </PhysicsFeature>
+        <PhysicsFeature op="PerfectElectricConductor" tag="pec1" name="Perfect Electric Conductor 1">
+          <!-- Node status -->
+          <entityFlags T="51">NOREMOVE|NODEACTIVATE</entityFlags>
+          <!-- User comments -->
+          <entityComments T="0"></entityComments>
+          <!-- Created by -->
+          <entityAuthor T="0"></entityAuthor>
+          <!-- Creation time -->
+          <entityCreationTime T="11">1510089324867</entityCreationTime>
+          <selection T="32" selection="XDLocalSelection" flags="17" selType="GEOMDIM">
+            <explicit dim="1" hDim="1" geom="/geom/geom1"/>
+          </selection>
+          <!-- Parameter values -->
+          <param T="33" param="constraintType" value="1|1,'symmetricConstraint'"></param>
+          <param T="33" param="weakConstraints" value="1|1,'0'"></param>
+          <param T="33" param="constraintMethod" value="1|1,'elemental'"></param>
+          <param T="33" param="StudyStep" value="1|1,'0'"></param>
+          <param T="33" param="showPhysicsSymbols" value="1|1,'1'"></param>
+          <!-- Feature dimension -->
+          <edim T="5">1</edim>
+          <!-- Flag indicating default feature -->
+          <default T="3">true</default>
+          <FeatureInfoList tag="featureInfo" name="List">
+            <!-- User comments -->
+            <entityComments T="0"></entityComments>
+            <!-- Created by -->
+            <entityAuthor T="0"></entityAuthor>
+            <!-- Creation time -->
+            <entityCreationTime T="11">1510089324867</entityCreationTime>
+            <FeatureInfo tag="info" name="Equation View">
+              <!-- Node status -->
+              <entityFlags T="51">NOREMOVE|NODEACTIVATE</entityFlags>
+              <!-- User comments -->
+              <entityComments T="0"></entityComments>
+              <!-- Created by -->
+              <entityAuthor T="0"></entityAuthor>
+              <!-- Creation time -->
+              <entityCreationTime T="11">1510089324867</entityCreationTime>
+            </FeatureInfo>
+          </FeatureInfoList>
+          <ModelEntityTag tag="DomainType">
+            <!-- List of tags -->
+            <values T="1">1,'EXTERIOR'</values>
+          </ModelEntityTag>
+          <PhysicsFeatureList tag="feature" name="List">
+            <!-- User comments -->
+            <entityComments T="0"></entityComments>
+            <!-- Created by -->
+            <entityAuthor T="0"></entityAuthor>
+            <!-- Creation time -->
+            <entityCreationTime T="11">1510089324867</entityCreationTime>
+          </PhysicsFeatureList>
+        </PhysicsFeature>
+        <PhysicsFeature op="init" tag="init1" name="Initial Values 1">
+          <!-- Node status -->
+          <entityFlags T="51">NOREMOVE|NODEACTIVATE</entityFlags>
+          <!-- User comments -->
+          <entityComments T="0"></entityComments>
+          <!-- Created by -->
+          <entityAuthor T="0"></entityAuthor>
+          <!-- Creation time -->
+          <entityCreationTime T="11">1510089324867</entityCreationTime>
+          <selection T="32" selection="XDLocalSelection" flags="17" selType="GEOMDIM">
+            <explicit dim="2" hDim="2" geom="/geom/geom1"/>
+          </selection>
+          <!-- Parameter values -->
+          <param T="33" param="E" value="3|1,'0'|1,'0'|1,'0'"></param>
+          <param T="33" param="coordinateSystem" value="1|1,'GlobalSystem'"></param>
+          <param T="33" param="StudyStep" value="1|1,'0'"></param>
+          <!-- Feature dimension -->
+          <edim T="5">2</edim>
+          <!-- Flag indicating default feature -->
+          <default T="3">true</default>
+          <FeatureInfoList tag="featureInfo" name="List">
+            <!-- User comments -->
+            <entityComments T="0"></entityComments>
+            <!-- Created by -->
+            <entityAuthor T="0"></entityAuthor>
+            <!-- Creation time -->
+            <entityCreationTime T="11">1510089324867</entityCreationTime>
+            <FeatureInfo tag="info" name="Equation View">
+              <!-- Node status -->
+              <entityFlags T="51">NOREMOVE|NODEACTIVATE</entityFlags>
+              <!-- User comments -->
+              <entityComments T="0"></entityComments>
+              <!-- Created by -->
+              <entityAuthor T="0"></entityAuthor>
+              <!-- Creation time -->
+              <entityCreationTime T="11">1510089324867</entityCreationTime>
+            </FeatureInfo>
+          </FeatureInfoList>
+          <ModelEntityTag tag="DomainType">
+            <!-- List of tags -->
+            <values T="1">2,'VOID','GEOMETRY'</values>
+          </ModelEntityTag>
+          <PhysicsFeatureList tag="feature" name="List">
+            <!-- User comments -->
+            <entityComments T="0"></entityComments>
+            <!-- Created by -->
+            <entityAuthor T="0"></entityAuthor>
+            <!-- Creation time -->
+            <entityCreationTime T="11">1510089324867</entityCreationTime>
+          </PhysicsFeatureList>
+        </PhysicsFeature>
+      </PhysicsFeatureList>
+      <PhysicsPropList tag="prop" name="List">
+        <!-- User comments -->
+        <entityComments T="0"></entityComments>
+        <!-- Created by -->
+        <entityAuthor T="0"></entityAuthor>
+        <!-- Creation time -->
+        <entityCreationTime T="11">1510089324820</entityCreationTime>
+        <PhysicsProp tag="PhysicsSymbols">
+          <!-- Parameter values -->
+          <param T="33" param="PhysicsSymbols" value="1|1,'off'"></param>
+          <param T="33" param="physicsSymbolButtons" value="1|1,'0'"></param>
+        </PhysicsProp>
+        <PhysicsProp tag="ShapeProperty">
+          <!-- Parameter values -->
+          <param T="33" param="order_electricfield" value="1|1,'2'"></param>
+          <param T="33" param="boundaryFlux_electricfield" value="1|1,'0'"></param>
+          <param T="33" param="boundaryFluxSmooth_electricfield" value="1|1,'1'"></param>
+          <param T="33" param="hiddenRowLabels" value="1|1,'Electric field'"></param>
+          <param T="33" param="valueType" value="1|1,'complex'"></param>
+          <param T="33" param="frame" value="1|1,'spatial'"></param>
+        </PhysicsProp>
+        <PhysicsProp tag="EquationForm">
+          <!-- Parameter values -->
+          <param T="33" param="form" value="1|1,'Automatic'"></param>
+          <param T="33" param="freq_src" value="1|1,'fromSolver'"></param>
+          <param T="33" param="freq" value="1|1,'1[GHz]'"></param>
+          <param T="33" param="modeFreq" value="1|1,'1[GHz]'"></param>
+          <param T="33" param="PortName" value="1|1,'1'"></param>
+          <param T="33" param="showAllModelInputs" value="1|1,'0'"></param>
+        </PhysicsProp>
+        <PhysicsProp tag="components">
+          <!-- Parameter values -->
+          <param T="33" param="components" value="1|1,'threecomponent'"></param>
+        </PhysicsProp>
+        <PhysicsProp tag="ElectromagneticWavesProperty">
+        </PhysicsProp>
+        <PhysicsProp tag="BackgroundField">
+          <!-- Parameter values -->
+          <param T="33" param="SolveFor" value="1|1,'fullField'"></param>
+          <param T="33" param="WaveType" value="1|1,'userdef'"></param>
+          <param T="33" param="Eb" value="3|1,'0'|1,'0'|1,'0'"></param>
+          <param T="33" param="BeamOrientation" value="1|1,'Xaxis'"></param>
+          <param T="33" param="w0" value="1|1,'((10*2)*pi)/emw.k0'"></param>
+          <param T="33" param="p0" value="1|1,'0'"></param>
+          <param T="33" param="Ebg" value="3|1,'0'|1,'0'|1,'1[V/m]'"></param>
+          <param T="33" param="kUserDefined" value="1|1,'emw.k0'"></param>
+          <param T="33" param="Eampl" value="1|1,'1[V/m]'"></param>
+          <param T="33" param="angleRoll" value="1|1,'0'"></param>
+          <param T="33" param="anglePitch" value="1|1,'0'"></param>
+          <param T="33" param="angleYaw" value="1|1,'0'"></param>
+        </PhysicsProp>
+        <PhysicsProp tag="NormalVectorNDir">
+        </PhysicsProp>
+        <PhysicsProp tag="WaveNumber">
+        </PhysicsProp>
+        <PhysicsProp tag="PortSweepSettings">
+          <!-- Parameter values -->
+          <param T="33" param="useSweep" value="1|1,'0'"></param>
+          <param T="33" param="sweepOn" value="1|1,'Ports'"></param>
+          <param T="33" param="PortParamName" value="1|1,'PortName'"></param>
+          <param T="33" param="zref" value="1|1,'50[ohm]'"></param>
+          <param T="33" param="TouchstoneFile" value="1|1,''"></param>
+          <param T="33" param="format" value="1|1,'MA'"></param>
+          <param T="33" param="parameter" value="1|1,'S'"></param>
+          <param T="33" param="IfFileExists" value="1|1,'Overwrite'"></param>
+        </PhysicsProp>
+        <PhysicsProp tag="outofplanewavenumber">
+          <!-- Parameter values -->
+          <param T="33" param="kz" value="1|1,'0'"></param>
+        </PhysicsProp>
+        <PhysicsProp tag="SurfaceCurrentDensity">
+        </PhysicsProp>
+        <PhysicsProp tag="FloquetWaveVector">
+        </PhysicsProp>
+        <PhysicsProp tag="rootsofbesselfunction">
+        </PhysicsProp>
+        <PhysicsProp tag="WaveEquationIntegration">
+        </PhysicsProp>
+        <PhysicsProp tag="TotalElectricEnergy">
+        </PhysicsProp>
+        <PhysicsProp tag="TotalMagneticEnergy">
+        </PhysicsProp>
+        <PhysicsProp tag="AnalysisMethodology">
+          <!-- Parameter values -->
+          <param T="33" param="MethodologyOptions" value="1|1,'Fast'"></param>
+        </PhysicsProp>
+        <PhysicsProp tag="SlitPortSelectionCheck">
+        </PhysicsProp>
+        <PhysicsProp tag="MeshControl">
+          <!-- Parameter values -->
+          <param T="33" param="EnableMeshControl" value="1|1,'1'"></param>
+          <param T="33" param="SizeControlParameter" value="1|1,'FromStudy'"></param>
+          <param T="33" param="PhysicsControlledMeshMaximumElementSize" value="1|1,''"></param>
+          <param T="33" param="PhysicsControlledMeshMaximumFrequency" value="1|1,''"></param>
+          <param T="33" param="PhysicsControlledMeshMinimumWavelength" value="1|1,''"></param>
+          <param T="33" param="ResolveWaveInLossyMedia" value="1|1,'0'"></param>
+        </PhysicsProp>
+        <PhysicsProp tag="MultiphysicsFrequencyMaker">
+        </PhysicsProp>
+        <PhysicsProp tag="StudyStep">
+          <!-- Parameter values -->
+          <param T="33" param="StudyStep" value="1|1,'0'"></param>
+        </PhysicsProp>
+      </PhysicsPropList>
+    </Physics>
+  </PhysicsList>
+  <GeomList tag="geom" name="Geometry Parts">
+    <!-- User comments -->
+    <entityComments T="0"></entityComments>
+    <!-- Created by -->
+    <entityAuthor T="0"></entityAuthor>
+    <!-- Creation time -->
+    <entityCreationTime T="11">1510089324044</entityCreationTime>
+    <GeomSequence tag="geom1" name="Geometry 1">
+      <!-- Node status -->
+      <entityFlags T="51">NODEACTIVATE</entityFlags>
+      <!-- Containing model node -->
+      <storedParent T="50">/modelNode/comp1</storedParent>
+      <!-- User comments -->
+      <entityComments T="0"></entityComments>
+      <!-- Created by -->
+      <entityAuthor T="0"></entityAuthor>
+      <!-- Creation time -->
+      <entityCreationTime T="11">1510089324711</entityCreationTime>
+      <!-- Last modification time -->
+      <entityModifyTime T="11">1510256763339</entityModifyTime>
+      <!-- Updated by -->
+      <entityModifiedBy T="0"></entityModifiedBy>
+      <assocID T="6">1,0,439901642,-2006401241</assocID>
+      <angularUnit T="0">deg</angularUnit>
+      <assocMaps T="7">{0,1,2,3,4,0,0,0,0,0},{0,1,2,3,4,0,0,0,0,0,0,0},{0,1,0,-1}</assocMaps>
+      <inverseAssocMaps T="7">{0,1,2,3,4},{0,1,2,3,4},{0,1}</inverseAssocMaps>
+      <current T="50">/geom/geom1/feature/dif1</current>
+      <externallySet T="3">false</externallySet>
+      <geometryFrame T="50">/frame/geometry1</geometryFrame>
+      <geomInfo T="50">/geom/geom1/geomnative</geomInfo>
+      <!-- Geometry kernel -->
+      <geomrep T="0">comsol</geomrep>
+      <lastBuiltFeature T="50">/geom/geom1/feature/fin</lastBuiltFeature>
+      <lengthUnit T="0">m</lengthUnit>
+      <materialFrame T="50">/frame/material1</materialFrame>
+      <meshFrame T="50">/frame/mesh1</meshFrame>
+      <sdim T="5">2</sdim>
+      <spatialFrame T="50">/frame/spatial1</spatialFrame>
+      <!-- Geometry sequence type -->
+      <sequenceType T="103">STANDARD</sequenceType>
+      <hashKey T="11">-413139616990652205</hashKey>
+      <GeomFeatureList tag="feature" name="List">
+        <!-- User comments -->
+        <entityComments T="0"></entityComments>
+        <!-- Created by -->
+        <entityAuthor T="0"></entityAuthor>
+        <!-- Creation time -->
+        <entityCreationTime T="11">1510089324695</entityCreationTime>
+        <GeomFeature op="Rectangle" tag="r1" name="Rectangle 1">
+          <!-- User comments -->
+          <entityComments T="0"></entityComments>
+          <!-- Created by -->
+          <entityAuthor T="0"></entityAuthor>
+          <!-- Creation time -->
+          <entityCreationTime T="11">1510089394114</entityCreationTime>
+          <!-- Last modification time -->
+          <entityModifyTime T="11">1510256763339</entityModifyTime>
+          <!-- Updated by -->
+          <entityModifiedBy T="0"></entityModifiedBy>
+          <!-- Key containing all property values -->
+          <key T="0">true[deg]posconstroff|off|pos-0.1|0.0|x-0.1y0.0rotconstroffrot0.0typesolidbasecornerlayerlayerleftofflayerrightofflayerbottomonlayertopofflx0.1ly0.02sizeconstroff|off|size0.1|0.02|</key>
+          <!-- Current feature status -->
+          <status T="101">BUILT</status>
+          <!-- Status of last build operation -->
+          <buildStatus T="101">BUILT</buildStatus>
+          <!-- Contribute to -->
+          <propertyValue T="30" value="none" name="p:contributeto" ReferenceContainerList="/geom/geom1/selection" CompositeIndex="1"></propertyValue>
+          <!-- Position -->
+          <propertyValue T="30" valueMatrix="1|2,'-0.1','0'" name="p:pos"></propertyValue>
+          <!-- x -->
+          <propertyValue T="30" value="-0.1" name="p:x"></propertyValue>
+          <!-- Width -->
+          <propertyValue T="30" value="0.1" name="p:lx"></propertyValue>
+          <!-- Height -->
+          <propertyValue T="30" value="0.02" name="p:ly"></propertyValue>
+          <!-- Size -->
+          <propertyValue T="30" valueMatrix="1|2,'0.1','0.02'" name="p:size"></propertyValue>
+          <assocConfig T="9">[({0,3}),({1,2}),({0,1}),({3,2})],[({3}),({1}),({0}),({2})],[],[(),(),(),(),({1})]</assocConfig>
+          <cacheTag T="11">-8061468852787065832</cacheTag>
+          <!-- Unique identifier -->
+          <id T="5">2</id>
+          <NodeDefaultValues>16,'p:selresult','p:selresultshow','p:posconstr','p:y','p:rotconstr','p:rot','p:type','p:base','p:layerold','p:layername','p:layer','p:layerleft','p:layerright','p:layerbottom','p:layertop','p:sizeconstr'</NodeDefaultValues>
+          <GeomObjectList tag="geom">
+            <GeomObject tag="r1(1)" name="Rectangle[geometry]">
+              <!-- Node status -->
+              <entityFlags T="51">NORETAG</entityFlags>
+              <!-- User comments -->
+              <entityComments T="0"></entityComments>
+              <!-- Created by -->
+              <entityAuthor T="0"></entityAuthor>
+              <!-- Creation time -->
+              <entityCreationTime T="11">1510089415905</entityCreationTime>
+              <assocID T="6">2,0,-1876956982,-1763722469</assocID>
+              <GeomNative tag="geomnative">
+                <!-- Space dimension. -->
+                <spaceDim T="5">2</spaceDim>
+                <!-- Number of entities. -->
+                <numEntities T="6">4,4,1</numEntities>
+                <!-- Number of entities for mesh control. -->
+                <numEntitiesMesh T="6">4,4,1</numEntitiesMesh>
+                <!-- Number of finite void regions. -->
+                <numFiniteVoids T="5">0</numFiniteVoids>
+                <!-- Geometry exists. -->
+                <existing T="3">true</existing>
+                <!-- Void regions are labeled. -->
+                <voidsLabeled T="3">true</voidsLabeled>
+                <!-- Size. -->
+                <geomScale T="12">0.1</geomScale>
+                <!-- Relative tolerance. -->
+                <geomTol T="12">1.0E-10</geomTol>
+                <!-- Object type -->
+                <type T="0">solid</type>
+                <!-- Geom object -->
+                <geom T="52" class="GEOMETRY" resource="geometry1.mphbin" id="901fe8ca35c04c18" fileid="3baf626b4a3ed787"/>
+              </GeomNative>
+            </GeomObject>
+          </GeomObjectList>
+          <GeomFeatureList tag="feature" name="List">
+            <!-- User comments -->
+            <entityComments T="0"></entityComments>
+            <!-- Created by -->
+            <entityAuthor T="0"></entityAuthor>
+            <!-- Creation time -->
+            <entityCreationTime T="11">1510089394116</entityCreationTime>
+          </GeomFeatureList>
+        </GeomFeature>
+        <GeomFeature op="Polygon" tag="pol1" name="Polygon 1">
+          <!-- User comments -->
+          <entityComments T="0"></entityComments>
+          <!-- Created by -->
+          <entityAuthor T="0"></entityAuthor>
+          <!-- Creation time -->
+          <entityCreationTime T="11">1510256598858</entityCreationTime>
+          <!-- Key containing all property values -->
+          <key T="0">true[deg]typesolidtableconstrsourcevectorsx0.0|0.03|0.03|0.0|y0.0|-0.01|0.03|0.02|segid3|4|5|6|segvtxvalid0.0|0.0|0.03|-0.01|0.03|0.03|0.0|0.02|0.0|0.0|addedrowidx-1addedrow</key>
+          <!-- Identifier of stored native. -->
+          <cacheTagImported T="11">7896267897224532588</cacheTagImported>
+          <!-- Current feature status -->
+          <status T="101">BUILT</status>
+          <!-- Status of last build operation -->
+          <buildStatus T="101">BUILT</buildStatus>
+          <!-- Contribute to -->
+          <propertyValue T="30" value="none" name="p:contributeto" ReferenceContainerList="/geom/geom1/selection" CompositeIndex="1"></propertyValue>
+          <!-- #x0 -->
+          <propertyValue T="30" value="{0,0.03,0.03,0}" valueMatrix="1|4,'0','0.03','0.03','0'" name="p:x"></propertyValue>
+          <!-- #x1 -->
+          <propertyValue T="30" value="{0,-0.01,0.03,0.02}" valueMatrix="1|4,'0','-0.01','0.03','0.02'" name="p:y"></propertyValue>
+          <!-- Segment IDs -->
+          <propertyValue T="30" valueMatrix="1|4,'3','4','5','6'" name="p:segid"></propertyValue>
+          <!-- Valid vertex coordinates -->
+          <propertyValue T="30" valueMatrix="5|2,'0','0'|2,'0.03','-0.01'|2,'0.03','0.03'|2,'0','0.02'|2,'0','0'" name="p:segvtxvalid"></propertyValue>
+          <cacheTag T="11">7896267897224532588</cacheTag>
+          <!-- Unique identifier -->
+          <id T="5">7</id>
+          <NodeDefaultValues>32,'p:selresult','p:selresultshow','p:type','p:tableconstr','p:source','p:filename','p:rebuild','p:table','p:tableexcelfilename','p:tableexcelsheet','p:tableexcelrange','p:tableexceloverwrite','p:tableexcelincludeheaders','p:tableexcelseparateunits','p:x_vector_method','p:x_vector_start','p:x_vector_stop','p:x_vector_step','p:x_vector_numvalues','p:x_vector_function','p:x_vector_interval','p:x_vector_freqperdec','p:y_vector_method','p:y_vector_start','p:y_vector_stop','p:y_vector_step','p:y_vector_numvalues','p:y_vector_function','p:y_vector_interval','p:y_vector_freqperdec','p:addedrowidx','p:addedrow'</NodeDefaultValues>
+          <GeomObjectList tag="geom">
+            <GeomObject tag="pol1(1)" name="Polygon">
+              <!-- Node status -->
+              <entityFlags T="51">NORETAG</entityFlags>
+              <!-- User comments -->
+              <entityComments T="0"></entityComments>
+              <!-- Created by -->
+              <entityAuthor T="0"></entityAuthor>
+              <!-- Creation time -->
+              <entityCreationTime T="11">1510256652239</entityCreationTime>
+              <assocID T="6">7,0,1838493136,-1782515257</assocID>
+              <GeomNative tag="geomnative">
+                <!-- Space dimension. -->
+                <spaceDim T="5">2</spaceDim>
+                <!-- Number of entities. -->
+                <numEntities T="6">4,4,1</numEntities>
+                <!-- Number of entities for mesh control. -->
+                <numEntitiesMesh T="6">4,4,1</numEntitiesMesh>
+                <!-- Number of finite void regions. -->
+                <numFiniteVoids T="5">0</numFiniteVoids>
+                <!-- Geometry exists. -->
+                <existing T="3">true</existing>
+                <!-- Void regions are labeled. -->
+                <voidsLabeled T="3">true</voidsLabeled>
+                <!-- Size. -->
+                <geomScale T="12">0.03</geomScale>
+                <!-- Relative tolerance. -->
+                <geomTol T="12">1.0E-10</geomTol>
+                <!-- Object type -->
+                <type T="0">solid</type>
+                <!-- Geom object -->
+                <geom T="52" class="GEOMETRY" resource="geometry2.mphbin" id="6d952dd0f963926c" fileid="942d10e8d02fd577"/>
+              </GeomNative>
+            </GeomObject>
+          </GeomObjectList>
+          <GeomFeatureList tag="feature" name="List">
+            <!-- User comments -->
+            <entityComments T="0"></entityComments>
+            <!-- Created by -->
+            <entityAuthor T="0"></entityAuthor>
+            <!-- Creation time -->
+            <entityCreationTime T="11">1510256598858</entityCreationTime>
+          </GeomFeatureList>
+          <GeomObjectList tag="importedGeom" name="List">
+            <!-- User comments -->
+            <entityComments T="0"></entityComments>
+            <!-- Created by -->
+            <entityAuthor T="0"></entityAuthor>
+            <!-- Creation time -->
+            <entityCreationTime T="11">1510256652239</entityCreationTime>
+            <GeomObject tag="part0" name="Polygon">
+              <!-- Node status -->
+              <entityFlags T="51">NORETAG</entityFlags>
+              <!-- User comments -->
+              <entityComments T="0"></entityComments>
+              <!-- Created by -->
+              <entityAuthor T="0"></entityAuthor>
+              <!-- Creation time -->
+              <entityCreationTime T="11">1510256652239</entityCreationTime>
+              <GeomNative tag="geomnative">
+                <!-- Space dimension. -->
+                <spaceDim T="5">2</spaceDim>
+                <!-- Number of entities. -->
+                <numEntities T="6">4,4,1</numEntities>
+                <!-- Number of entities for mesh control. -->
+                <numEntitiesMesh T="6">4,4,1</numEntitiesMesh>
+                <!-- Number of finite void regions. -->
+                <numFiniteVoids T="5">0</numFiniteVoids>
+                <!-- Geometry exists. -->
+                <existing T="3">true</existing>
+                <!-- Void regions are labeled. -->
+                <voidsLabeled T="3">true</voidsLabeled>
+                <!-- Size. -->
+                <geomScale T="12">0.03</geomScale>
+                <!-- Relative tolerance. -->
+                <geomTol T="12">1.0E-10</geomTol>
+                <!-- Object type -->
+                <type T="0">solid</type>
+                <!-- Geom object -->
+                <geom T="52" class="GEOMETRY" resource="geometry2.mphbin" id="6d952dd0f963926c" fileid="942d10e8d02fd577"/>
+              </GeomNative>
+            </GeomObject>
+          </GeomObjectList>
+        </GeomFeature>
+        <GeomFeature op="Circle" tag="c1" name="Circle 1">
+          <!-- User comments -->
+          <entityComments T="0"></entityComments>
+          <!-- Created by -->
+          <entityAuthor T="0"></entityAuthor>
+          <!-- Creation time -->
+          <entityCreationTime T="11">1510256670948</entityCreationTime>
+          <!-- Key containing all property values -->
+          <key T="0">true[deg]posconstroff|off|pos0.03|0.01|x0.03y0.01rotconstroffrot0.0typesolidbasecenterlayerrconstroffr0.07angleconstronangle360.0</key>
+          <!-- Current feature status -->
+          <status T="101">BUILT</status>
+          <!-- Status of last build operation -->
+          <buildStatus T="101">BUILT</buildStatus>
+          <!-- Contribute to -->
+          <propertyValue T="30" value="none" name="p:contributeto" ReferenceContainerList="/geom/geom1/selection" CompositeIndex="1"></propertyValue>
+          <!-- Position -->
+          <propertyValue T="30" valueMatrix="1|2,'0.03','0.01'" name="p:pos"></propertyValue>
+          <!-- x -->
+          <propertyValue T="30" value="0.03" name="p:x"></propertyValue>
+          <!-- y -->
+          <propertyValue T="30" value="0.01" name="p:y"></propertyValue>
+          <!-- Radius -->
+          <propertyValue T="30" value="0.07" name="p:r"></propertyValue>
+          <assocConfig T="9">[({0}),({1}),({2}),({3})],[({0}),({1}),({2}),({3})],[],[(),({1})]</assocConfig>
+          <cacheTag T="11">8784066363628965320</cacheTag>
+          <!-- Unique identifier -->
+          <id T="5">8</id>
+          <NodeDefaultValues>13,'p:selresult','p:selresultshow','p:posconstr','p:rotconstr','p:rot','p:type','p:base','p:layerold','p:layername','p:layer','p:rconstr','p:angleconstr','p:angle'</NodeDefaultValues>
+          <GeomObjectList tag="geom">
+            <GeomObject tag="c1(1)" name="Circle">
+              <!-- Node status -->
+              <entityFlags T="51">NORETAG</entityFlags>
+              <!-- User comments -->
+              <entityComments T="0"></entityComments>
+              <!-- Created by -->
+              <entityAuthor T="0"></entityAuthor>
+              <!-- Creation time -->
+              <entityCreationTime T="11">1510256670948</entityCreationTime>
+              <assocID T="6">8,0,2045199825,-1196475189</assocID>
+              <GeomNative tag="geomnative">
+                <!-- Space dimension. -->
+                <spaceDim T="5">2</spaceDim>
+                <!-- Number of entities. -->
+                <numEntities T="6">4,4,1</numEntities>
+                <!-- Number of entities for mesh control. -->
+                <numEntitiesMesh T="6">4,4,1</numEntitiesMesh>
+                <!-- Number of finite void regions. -->
+                <numFiniteVoids T="5">0</numFiniteVoids>
+                <!-- Void regions are labeled. -->
+                <voidsLabeled T="3">true</voidsLabeled>
+                <!-- Size. -->
+                <geomScale T="12">0.1</geomScale>
+                <!-- Relative tolerance. -->
+                <geomTol T="12">1.0E-10</geomTol>
+                <!-- Object type -->
+                <type T="0">solid</type>
+              </GeomNative>
+            </GeomObject>
+          </GeomObjectList>
+          <GeomFeatureList tag="feature" name="List">
+            <!-- User comments -->
+            <entityComments T="0"></entityComments>
+            <!-- Created by -->
+            <entityAuthor T="0"></entityAuthor>
+            <!-- Creation time -->
+            <entityCreationTime T="11">1510256670948</entityCreationTime>
+          </GeomFeatureList>
+        </GeomFeature>
+        <GeomFeature op="Rectangle" tag="r2" name="Rectangle 2">
+          <!-- User comments -->
+          <entityComments T="0"></entityComments>
+          <!-- Created by -->
+          <entityAuthor T="0"></entityAuthor>
+          <!-- Creation time -->
+          <entityCreationTime T="11">1510256685215</entityCreationTime>
+          <!-- Key containing all property values -->
+          <key T="0">true[deg]posconstroff|off|pos-0.04|-0.06|x-0.04y-0.06rotconstroffrot0.0typesolidbasecornerlayerlayerleftofflayerrightofflayerbottomonlayertopofflx0.07ly0.14sizeconstroff|off|size0.07|0.14|</key>
+          <!-- Current feature status -->
+          <status T="101">BUILT</status>
+          <!-- Status of last build operation -->
+          <buildStatus T="101">BUILT</buildStatus>
+          <!-- Contribute to -->
+          <propertyValue T="30" value="none" name="p:contributeto" ReferenceContainerList="/geom/geom1/selection" CompositeIndex="1"></propertyValue>
+          <!-- Position -->
+          <propertyValue T="30" valueMatrix="1|2,'-0.04','-0.06'" name="p:pos"></propertyValue>
+          <!-- x -->
+          <propertyValue T="30" value="-0.04" name="p:x"></propertyValue>
+          <!-- y -->
+          <propertyValue T="30" value="-0.06" name="p:y"></propertyValue>
+          <!-- Width -->
+          <propertyValue T="30" value="0.07" name="p:lx"></propertyValue>
+          <!-- Height -->
+          <propertyValue T="30" value="0.14" name="p:ly"></propertyValue>
+          <!-- Size -->
+          <propertyValue T="30" valueMatrix="1|2,'0.07','0.14'" name="p:size"></propertyValue>
+          <assocConfig T="9">[({0,3}),({1,2}),({0,1}),({3,2})],[({3}),({1}),({0}),({2})],[],[(),(),(),(),({1})]</assocConfig>
+          <cacheTag T="11">5486640114048943244</cacheTag>
+          <!-- Unique identifier -->
+          <id T="5">9</id>
+          <NodeDefaultValues>15,'p:selresult','p:selresultshow','p:posconstr','p:rotconstr','p:rot','p:type','p:base','p:layerold','p:layername','p:layer','p:layerleft','p:layerright','p:layerbottom','p:layertop','p:sizeconstr'</NodeDefaultValues>
+          <GeomObjectList tag="geom">
+            <GeomObject tag="r2(1)" name="Rectangle[geometry]">
+              <!-- Node status -->
+              <entityFlags T="51">NORETAG</entityFlags>
+              <!-- User comments -->
+              <entityComments T="0"></entityComments>
+              <!-- Created by -->
+              <entityAuthor T="0"></entityAuthor>
+              <!-- Creation time -->
+              <entityCreationTime T="11">1510256685215</entityCreationTime>
+              <assocID T="6">9,0,1277457949,-1586809969</assocID>
+              <GeomNative tag="geomnative">
+                <!-- Space dimension. -->
+                <spaceDim T="5">2</spaceDim>
+                <!-- Number of entities. -->
+                <numEntities T="6">4,4,1</numEntities>
+                <!-- Number of entities for mesh control. -->
+                <numEntitiesMesh T="6">4,4,1</numEntitiesMesh>
+                <!-- Number of finite void regions. -->
+                <numFiniteVoids T="5">0</numFiniteVoids>
+                <!-- Void regions are labeled. -->
+                <voidsLabeled T="3">true</voidsLabeled>
+                <!-- Size. -->
+                <geomScale T="12">0.08000000000000002</geomScale>
+                <!-- Relative tolerance. -->
+                <geomTol T="12">1.0E-10</geomTol>
+                <!-- Object type -->
+                <type T="0">solid</type>
+              </GeomNative>
+            </GeomObject>
+          </GeomObjectList>
+          <GeomFeatureList tag="feature" name="List">
+            <!-- User comments -->
+            <entityComments T="0"></entityComments>
+            <!-- Created by -->
+            <entityAuthor T="0"></entityAuthor>
+            <!-- Creation time -->
+            <entityCreationTime T="11">1510256685215</entityCreationTime>
+          </GeomFeatureList>
+        </GeomFeature>
+        <GeomFeature op="Difference" tag="dif1" name="Difference 1">
+          <!-- User comments -->
+          <entityComments T="0"></entityComments>
+          <!-- Created by -->
+          <entityAuthor T="0"></entityAuthor>
+          <!-- Creation time -->
+          <entityCreationTime T="11">1510256692363</entityCreationTime>
+          <!-- Key containing all property values -->
+          <key T="0">true[deg]inputOBJECT[c1]input2OBJECT[r2]keepoffintbndonedgenonepointnonerepairtoltypeautoregularizeongeomrepcomsol</key>
+          <!-- Current feature status -->
+          <status T="101">BUILT</status>
+          <!-- Status of last build operation -->
+          <buildStatus T="101">BUILT</buildStatus>
+          <!-- Contribute to -->
+          <propertyValue T="30" value="none" name="p:contributeto" ReferenceContainerList="/geom/geom1/selection" CompositeIndex="1"></propertyValue>
+          <!-- Objects to add -->
+          <propertyValue T="30" name="p:input">
+            <Selection selection="LocalGeomObjectSelection" selType="OBJECT">
+              <base geom="/geom/geom1"/>
+              <object flags="12" feature="/geom/geom1/feature/c1" assocId="{8,0,2045199825,-1196475189}"/>
+            </Selection>
+          </propertyValue>
+          <!-- Objects to subtract -->
+          <propertyValue T="30" name="p:input2">
+            <Selection selection="LocalGeomObjectSelection" selType="OBJECT">
+              <base geom="/geom/geom1"/>
+              <object flags="12" feature="/geom/geom1/feature/r2" assocId="{9,0,1277457949,-1586809969}"/>
+            </Selection>
+          </propertyValue>
+          <!-- Absolute repair tolerance -->
+          <propertyValue T="30" value="1.0E-7" name="p:absrepairtol"></propertyValue>
+          <cacheTag T="11">7606318921688927455</cacheTag>
+          <!-- Unique identifier -->
+          <id T="5">10</id>
+          <NodeDefaultValues>11,'p:selresult','p:selresultshow','p:cumselkey','p:keep','p:intbnd','p:edge','p:point','p:repairtoltype','p:repairtol','p:regularize','p:geomrep'</NodeDefaultValues>
+          <GeomObjectList tag="geom">
+            <GeomObject tag="dif1(1)" name="Difference">
+              <!-- Node status -->
+              <entityFlags T="51">NORETAG</entityFlags>
+              <!-- User comments -->
+              <entityComments T="0"></entityComments>
+              <!-- Created by -->
+              <entityAuthor T="0"></entityAuthor>
+              <!-- Creation time -->
+              <entityCreationTime T="11">1510256702519</entityCreationTime>
+              <assocID T="6">10,0,1770984130,-1242997813</assocID>
+              <GeomNative tag="geomnative">
+                <!-- Space dimension. -->
+                <spaceDim T="5">2</spaceDim>
+                <!-- Number of entities. -->
+                <numEntities T="6">3,3,1</numEntities>
+                <!-- Number of entities for mesh control. -->
+                <numEntitiesMesh T="6">3,3,1</numEntitiesMesh>
+                <!-- Number of finite void regions. -->
+                <numFiniteVoids T="5">0</numFiniteVoids>
+                <!-- Geometry exists. -->
+                <existing T="3">true</existing>
+                <!-- Void regions are labeled. -->
+                <voidsLabeled T="3">true</voidsLabeled>
+                <!-- Size. -->
+                <geomScale T="12">0.1</geomScale>
+                <!-- Relative tolerance. -->
+                <geomTol T="12">1.0E-10</geomTol>
+                <!-- Object type -->
+                <type T="0">solid</type>
+                <!-- Geom object -->
+                <geom T="52" class="GEOMETRY" resource="geometry3.mphbin" id="698f12c25f99ccdf" fileid="b9fc6be83ddc6b9d"/>
+              </GeomNative>
+            </GeomObject>
+          </GeomObjectList>
+          <GeomFeatureList tag="feature" name="List">
+            <!-- User comments -->
+            <entityComments T="0"></entityComments>
+            <!-- Created by -->
+            <entityAuthor T="0"></entityAuthor>
+            <!-- Creation time -->
+            <entityCreationTime T="11">1510256692363</entityCreationTime>
+          </GeomFeatureList>
+        </GeomFeature>
+        <GeomFeature op="Finalize" tag="fin" name="Form Union">
+          <!-- Node status -->
+          <entityFlags T="51">NOREMOVE|NORETAG|NODEACTIVATE</entityFlags>
+          <!-- User comments -->
+          <entityComments T="0"></entityComments>
+          <!-- Created by -->
+          <entityAuthor T="0"></entityAuthor>
+          <!-- Creation time -->
+          <entityCreationTime T="11">1510089324711</entityCreationTime>
+          <!-- Last modification time -->
+          <entityModifyTime T="11">1510256763339</entityModifyTime>
+          <!-- Updated by -->
+          <entityModifiedBy T="0"></entityModifiedBy>
+          <!-- Key containing all property values -->
+          <key T="0">true[deg]actionunionrepairtoltypeautogeomrepcomsol</key>
+          <!-- Current feature status -->
+          <status T="101">BUILT</status>
+          <!-- Status of last build operation -->
+          <buildStatus T="101">BUILT</buildStatus>
+          <!-- Absolute repair tolerance -->
+          <propertyValue T="30" value="1.0E-7" name="p:absrepairtol"></propertyValue>
+          <cacheTag T="11">1889363166055313481</cacheTag>
+          <!-- Unique identifier -->
+          <id T="5">1</id>
+          <NodeDefaultValues>8,'p:action','p:imprint','p:createpairs','p:splitpairs','p:pairtype','p:repairtoltype','p:repairtol','p:geomrep'</NodeDefaultValues>
+          <GeomObjectList tag="geom">
+            <GeomObject tag="fin(1)" name="Form_union/assembly">
+              <!-- Node status -->
+              <entityFlags T="51">NORETAG</entityFlags>
+              <!-- User comments -->
+              <entityComments T="0"></entityComments>
+              <!-- Created by -->
+              <entityAuthor T="0"></entityAuthor>
+              <!-- Creation time -->
+              <entityCreationTime T="11">1510089795766</entityCreationTime>
+              <!-- Last modification time -->
+              <entityModifyTime T="11">1510256763339</entityModifyTime>
+              <!-- Updated by -->
+              <entityModifiedBy T="0"></entityModifiedBy>
+              <assocID T="6">1,0,439901642,-2006401241</assocID>
+              <GeomNative tag="geomnative">
+                <!-- Space dimension. -->
+                <spaceDim T="5">2</spaceDim>
+                <!-- Number of entities. -->
+                <numEntities T="6">9,11,3</numEntities>
+                <!-- Number of entities for mesh control. -->
+                <numEntitiesMesh T="6">9,11,3</numEntitiesMesh>
+                <!-- Number of finite void regions. -->
+                <numFiniteVoids T="5">0</numFiniteVoids>
+                <!-- Geometry exists. -->
+                <existing T="3">true</existing>
+                <!-- Void regions are labeled. -->
+                <voidsLabeled T="3">true</voidsLabeled>
+                <!-- Size. -->
+                <geomScale T="12">0.1</geomScale>
+                <!-- Relative tolerance. -->
+                <geomTol T="12">1.0E-10</geomTol>
+                <!-- Object type -->
+                <type T="0">solid</type>
+                <!-- Geom object -->
+                <geom T="52" class="GEOMETRY" resource="geometry4.mphbin" id="1a385dca0c6f3049" fileid="6c8b8e657247b5a6"/>
+              </GeomNative>
+            </GeomObject>
+          </GeomObjectList>
+          <GeomFeatureList tag="feature" name="List">
+            <!-- User comments -->
+            <entityComments T="0"></entityComments>
+            <!-- Created by -->
+            <entityAuthor T="0"></entityAuthor>
+            <!-- Creation time -->
+            <entityCreationTime T="11">1510089324711</entityCreationTime>
+          </GeomFeatureList>
+        </GeomFeature>
+      </GeomFeatureList>
+      <GeomNative tag="geomnative">
+        <!-- Space dimension. -->
+        <spaceDim T="5">2</spaceDim>
+        <!-- Number of entities. -->
+        <numEntities T="6">9,11,3</numEntities>
+        <!-- Number of entities for mesh control. -->
+        <numEntitiesMesh T="6">9,11,3</numEntitiesMesh>
+        <!-- Number of finite void regions. -->
+        <numFiniteVoids T="5">0</numFiniteVoids>
+        <!-- Geometry exists. -->
+        <existing T="3">true</existing>
+        <!-- Void regions are labeled. -->
+        <voidsLabeled T="3">true</voidsLabeled>
+        <!-- Size. -->
+        <geomScale T="12">0.1</geomScale>
+        <!-- Relative tolerance. -->
+        <geomTol T="12">1.0E-10</geomTol>
+        <!-- Bounding box -->
+        <boundingBox T="13">-0.10000000000000002,0.1,-0.06000000000000001,0.08000000000000002</boundingBox>
+        <!-- Object type -->
+        <type T="0">solid</type>
+        <!-- Geom object -->
+        <geom T="52" class="GEOMETRY" resource="geometry4.mphbin" id="1a385dca0c6f3049" fileid="6c8b8e657247b5a6"/>
+      </GeomNative>
+      <GeomObjectSelectionFeatureList tag="selection" name="Cumulative Selections">
+        <!-- User comments -->
+        <entityComments T="0"></entityComments>
+        <!-- Created by -->
+        <entityAuthor T="0"></entityAuthor>
+        <!-- Creation time -->
+        <entityCreationTime T="11">1510089324711</entityCreationTime>
+      </GeomObjectSelectionFeatureList>
+    </GeomSequence>
+  </GeomList>
+  <GroupList tag="group" name="Load and Constraint Groups">
+    <!-- User comments -->
+    <entityComments T="0"></entityComments>
+    <!-- Created by -->
+    <entityAuthor T="0"></entityAuthor>
+    <!-- Creation time -->
+    <entityCreationTime T="11">1510089324044</entityCreationTime>
+  </GroupList>
+  <OdeList tag="ode" name="List">
+    <!-- User comments -->
+    <entityComments T="0"></entityComments>
+    <!-- Created by -->
+    <entityAuthor T="0"></entityAuthor>
+    <!-- Creation time -->
+    <entityCreationTime T="11">1510089324045</entityCreationTime>
+  </OdeList>
+  <FieldList tag="field" name="List">
+    <!-- User comments -->
+    <entityComments T="0"></entityComments>
+    <!-- Created by -->
+    <entityAuthor T="0"></entityAuthor>
+    <!-- Creation time -->
+    <entityCreationTime T="11">1510089324045</entityCreationTime>
+    <Field tag="field1">
+      <!-- Link to generator -->
+      <derivedFrom T="50">/physics/emw/feature/wee1</derivedFrom>
+      <fieldname T="0">E</fieldname>
+      <!-- Shape functions -->
+      <shapes T="50">/shape/shape1</shapes>
+      <shapes T="50">/shape/shape2</shapes>
+    </Field>
+  </FieldList>
+  <ProbeFeatureList tag="probe" name="List">
+    <!-- User comments -->
+    <entityComments T="0"></entityComments>
+    <!-- Created by -->
+    <entityAuthor T="0"></entityAuthor>
+    <!-- Creation time -->
+    <entityCreationTime T="11">1510089324045</entityCreationTime>
+  </ProbeFeatureList>
+  <ProbeFeatureList tag="massProp" name="List">
+    <!-- User comments -->
+    <entityComments T="0"></entityComments>
+    <!-- Created by -->
+    <entityAuthor T="0"></entityAuthor>
+    <!-- Creation time -->
+    <entityCreationTime T="11">1510089324045</entityCreationTime>
+  </ProbeFeatureList>
+  <CplList tag="cpl" name="List">
+    <!-- User comments -->
+    <entityComments T="0"></entityComments>
+    <!-- Created by -->
+    <entityAuthor T="0"></entityAuthor>
+    <!-- Creation time -->
+    <entityCreationTime T="11">1510089324045</entityCreationTime>
+    <Cpl op="Integration" tag="builder_integrate1" name="Wave Equation Feature Integration">
+      <!-- Node status -->
+      <entityFlags T="51">HIDDEN</entityFlags>
+      <!-- Link to generator -->
+      <derivedFrom T="50">/physics/emw/prop/WaveEquationIntegration</derivedFrom>
+      <!-- User comments -->
+      <entityComments T="0"></entityComments>
+      <!-- Created by -->
+      <entityAuthor T="0"></entityAuthor>
+      <!-- Creation time -->
+      <entityCreationTime T="11">1513341212665</entityCreationTime>
+      <selection T="32" selection="LocalSelection" selType="GEOMDIM">
+        <explicit dim="2" hDim="2" geom="/geom/geom1" entities="4,1,2,3"/>
+      </selection>
+      <!-- Type -->
+      <type T="0">Integration</type>
+      <!-- Operator name -->
+      <propertyValue T="30" value="root.comp1.emw.integratewee" name="p:opname"></propertyValue>
+      <NodeDefaultValues>6,'p:cond','p:method','p:intorder','p:frame','p:axisymactive','p:axisym'</NodeDefaultValues>
+      <CplList tag="feature" name="List">
+        <!-- User comments -->
+        <entityComments T="0"></entityComments>
+        <!-- Created by -->
+        <entityAuthor T="0"></entityAuthor>
+        <!-- Creation time -->
+        <entityCreationTime T="11">1513341212665</entityCreationTime>
+      </CplList>
+    </Cpl>
+  </CplList>
+  <FunctionFeatureList tag="func" name="Functions">
+    <!-- User comments -->
+    <entityComments T="0"></entityComments>
+    <!-- Created by -->
+    <entityAuthor T="0"></entityAuthor>
+    <!-- Creation time -->
+    <entityCreationTime T="11">1510089324045</entityCreationTime>
+    <FunctionFeature op="Interpolation" tag="builder_int1" name="Roots of Bessel Function Derivatives">
+      <!-- Node status -->
+      <entityFlags T="51">HIDDEN</entityFlags>
+      <!-- Link to generator -->
+      <derivedFrom T="50">/physics/emw</derivedFrom>
+      <!-- User comments -->
+      <entityComments T="0"></entityComments>
+      <!-- Created by -->
+      <entityAuthor T="0"></entityAuthor>
+      <!-- Creation time -->
+      <entityCreationTime T="11">1513341212650</entityCreationTime>
+      <!-- Functions -->
+      <propertyValue T="30" valueMatrix="1|2,'zdbint','1'" name="p:funcs"></propertyValue>
+      <!-- Data format -->
+      <propertyValue T="30" value="grid" name="p:struct"></propertyValue>
+      <!-- Function name -->
+      <propertyValue T="30" value="rdbint" name="p:funcname"></propertyValue>
+      <!-- Function values -->
+      <propertyValue T="30" valueMatrix="110|2,'0','3.83170597'|2,'1','7.01558667'|2,'2','10.17346814'|2,'3','13.32369194'|2,'4','16.47063005'|2,'5','19.61585851'|2,'6','22.76008438'|2,'7','25.90367209'|2,'8','29.04682853'|2,'9','32.18967991'|2,'10','1.841183781'|2,'11','5.331442774'|2,'12','8.536316366'|2,'13','11.7060049'|2,'14','14.86358863'|2,'15','18.01552786'|2,'16','21.16436986'|2,'17','24.31132686'|2,'18','27.45705057'|2,'19','30.60192297'|2,'20','3.054236928'|2,'21','6.706133194'|2,'22','9.969467823'|2,'23','13.17037086'|2,'24','16.34752232'|2,'25','19.51291278'|2,'26','22.67158177'|2,'27','25.82603714'|2,'28','28.97767277'|2,'29','32.12732702'|2,'30','4.201188941'|2,'31','8.015236598'|2,'32','11.34592431'|2,'33','14.58584829'|2,'34','17.78874787'|2,'35','20.97247694'|2,'36','24.14489743'|2,'37','27.31005793'|2,'38','30.47026881'|2,'39','33.62694918'|2,'40','5.317553126'|2,'41','9.282396285'|2,'42','12.68190844'|2,'43','15.96410704'|2,'44','19.1960288'|2,'45','22.40103227'|2,'46','25.58975968'|2,'47','28.76783622'|2,'48','31.93853934'|2,'49','35.10391668'|2,'50','6.415616376'|2,'51','10.51986087'|2,'52','13.98718863'|2,'53','17.31284249'|2,'54','20.57551452'|2,'55','23.80358148'|2,'56','27.0103079'|2,'57','30.20284908'|2,'58','33.3854439'|2,'59','36.56077769'|2,'60','7.501266145'|2,'61','11.73493595'|2,'62','15.26818146'|2,'63','18.63744301'|2,'64','21.93171502'|2,'65','25.1839256'|2,'66','28.40977636'|2,'67','31.61787572'|2,'68','34.81339298'|2,'69','37.9996409'|2,'70','8.57783649'|2,'71','12.93238624'|2,'72','16.52936588'|2,'73','19.94185337'|2,'74','23.26805293'|2,'75','26.54503206'|2,'76','29.79074858'|2,'77','33.01517864'|2,'78','36.22438055'|2,'79','39.42227458'|2,'80','9.647421652'|2,'81','14.11551891'|2,'82','17.77401237'|2,'83','21.22906262'|2,'84','24.58719749'|2,'85','27.88926943'|2,'86','31.15532656'|2,'87','34.39662855'|2,'88','37.62007804'|2,'89','40.83017868'|2,'90','10.71143397'|2,'91','15.28673767'|2,'92','19.00459354'|2,'93','22.50139873'|2,'94','25.89127728'|2,'95','29.2185635'|2,'96','32.50524735'|2,'97','35.76379293'|2,'98','39.00190281'|2,'99','42.22463843'|2,'100','11.77087667'|2,'101','16.44785275'|2,'102','20.22303141'|2,'103','23.76071586'|2,'104','27.18202153'|2,'105','30.53450475'|2,'106','33.84196578'|2,'107','37.11800042'|2,'108','40.37106891'|2,'109','43.6067649'" name="p:table"></propertyValue>
+      <!-- Primitive function name -->
+      <propertyValue T="30" value="int1_prim" name="p:primfunname"></propertyValue>
+      <!-- Inverse function name -->
+      <propertyValue T="30" value="int1_inv" name="p:funcinvname"></propertyValue>
+      <!-- Table -->
+      <propertyValue T="30" name="p:resultTable" ReferenceContainerList="/result/table"></propertyValue>
+      <!-- Interpolation -->
+      <propertyValue T="30" value="neighbor" name="p:interp"></propertyValue>
+      <!-- Random function name -->
+      <propertyValue T="30" value="rn_int1" name="p:randomname"></propertyValue>
+      <NodeDefaultValues>39,'p:sourcetype','p:modelres','p:importedname','p:importedstruct','p:importeddim','p:exportfilename','p:isexporting','p:source','p:filename','p:isuploaded','p:isexcel','p:sheet','p:range','p:interpres','p:nargs','p:scaledata','p:tableexcelfilename','p:tableexcelsheet','p:tableexcelrange','p:tableexceloverwrite','p:tableexcelincludeheaders','p:tableexcelseparateunits','p:defineprimfun','p:defineinv','p:resultTableFile','p:hideFrameSettings','p:defvars','p:frame','p:relaxnamecheck','p:extrap','p:extrapvalue','p:argunit','p:fununit','p:plotinv','p:definerandom','p:randomnargs','p:randomrange','p:leftend','p:rightend'</NodeDefaultValues>
+      <FunctionFeatureList tag="feature" name="Functions">
+        <!-- User comments -->
+        <entityComments T="0"></entityComments>
+        <!-- Created by -->
+        <entityAuthor T="0"></entityAuthor>
+        <!-- Creation time -->
+        <entityCreationTime T="11">1513341212650</entityCreationTime>
+      </FunctionFeatureList>
+    </FunctionFeature>
+    <FunctionFeature op="Interpolation" tag="builder_int2" name="Roots of Bessel Functions">
+      <!-- Node status -->
+      <entityFlags T="51">HIDDEN</entityFlags>
+      <!-- Link to generator -->
+      <derivedFrom T="50">/physics/emw</derivedFrom>
+      <!-- User comments -->
+      <entityComments T="0"></entityComments>
+      <!-- Created by -->
+      <entityAuthor T="0"></entityAuthor>
+      <!-- Creation time -->
+      <entityCreationTime T="11">1513341212665</entityCreationTime>
+      <!-- Functions -->
+      <propertyValue T="30" valueMatrix="1|2,'zbint','1'" name="p:funcs"></propertyValue>
+      <!-- Data format -->
+      <propertyValue T="30" value="grid" name="p:struct"></propertyValue>
+      <!-- Function name -->
+      <propertyValue T="30" value="rbint" name="p:funcname"></propertyValue>
+      <!-- Function values -->
+      <propertyValue T="30" valueMatrix="110|2,'0','2.404825558'|2,'1','5.52007811'|2,'2','8.653727913'|2,'3','11.79153444'|2,'4','14.93091771'|2,'5','18.07106397'|2,'6','21.21163663'|2,'7','24.35247153'|2,'8','27.49347913'|2,'9','30.63460647'|2,'10','3.83170597'|2,'11','7.01558667'|2,'12','10.17346814'|2,'13','13.32369194'|2,'14','16.47063005'|2,'15','19.61585851'|2,'16','22.76008438'|2,'17','25.90367209'|2,'18','29.04682853'|2,'19','32.18967991'|2,'20','5.135622302'|2,'21','8.41724414'|2,'22','11.61984117'|2,'23','14.79595178'|2,'24','17.95981949'|2,'25','21.11699705'|2,'26','24.27011231'|2,'27','27.42057355'|2,'28','30.5692045'|2,'29','33.71651951'|2,'30','6.380161896'|2,'31','9.76102313'|2,'32','13.01520072'|2,'33','16.22346616'|2,'34','19.40941523'|2,'35','22.58272959'|2,'36','25.7481667'|2,'37','28.90835078'|2,'38','32.06485241'|2,'39','35.21867074'|2,'40','7.588342435'|2,'41','11.06470949'|2,'42','14.37253667'|2,'43','17.61596605'|2,'44','20.82693296'|2,'45','24.01901952'|2,'46','27.19908777'|2,'47','30.37100767'|2,'48','33.53713771'|2,'49','36.69900113'|2,'50','8.771483816'|2,'51','12.3386042'|2,'52','15.70017408'|2,'53','18.98013388'|2,'54','22.2177999'|2,'55','25.43034115'|2,'56','28.62661831'|2,'57','31.81171672'|2,'58','34.98878129'|2,'59','38.15986856'|2,'60','9.936109524'|2,'61','13.58929017'|2,'62','17.00381967'|2,'63','20.32078921'|2,'64','23.58608444'|2,'65','26.82015198'|2,'66','30.03372239'|2,'67','33.23304176'|2,'68','36.42201967'|2,'69','39.60323942'|2,'70','11.08637002'|2,'71','14.82126873'|2,'72','18.28758283'|2,'73','21.64154102'|2,'74','24.93492789'|2,'75','28.19118846'|2,'76','31.42279419'|2,'77','34.63708935'|2,'78','37.83871738'|2,'79','41.03077369'|2,'80','12.22509226'|2,'81','16.03777419'|2,'82','19.55453643'|2,'83','22.94517313'|2,'84','26.26681464'|2,'85','29.54565967'|2,'86','32.79580004'|2,'87','36.02561506'|2,'88','39.240448'|2,'89','42.44388774'|2,'90','13.35430048'|2,'91','17.24122038'|2,'92','20.80704779'|2,'93','24.23388526'|2,'94','27.58374896'|2,'95','30.88537897'|2,'96','34.15437792'|2,'97','37.40009998'|2,'98','40.62855372'|2,'99','43.84380142'|2,'100','14.47550069'|2,'101','18.43346367'|2,'102','22.04698536'|2,'103','25.50945055'|2,'104','28.88737506'|2,'105','32.2118562'|2,'106','35.49990921'|2,'107','38.76180702'|2,'108','42.00419024'|2,'109','45.2315741'" name="p:table"></propertyValue>
+      <!-- Primitive function name -->
+      <propertyValue T="30" value="int2_prim" name="p:primfunname"></propertyValue>
+      <!-- Inverse function name -->
+      <propertyValue T="30" value="int2_inv" name="p:funcinvname"></propertyValue>
+      <!-- Table -->
+      <propertyValue T="30" name="p:resultTable" ReferenceContainerList="/result/table"></propertyValue>
+      <!-- Interpolation -->
+      <propertyValue T="30" value="neighbor" name="p:interp"></propertyValue>
+      <!-- Random function name -->
+      <propertyValue T="30" value="rn_int2" name="p:randomname"></propertyValue>
+      <NodeDefaultValues>39,'p:sourcetype','p:modelres','p:importedname','p:importedstruct','p:importeddim','p:exportfilename','p:isexporting','p:source','p:filename','p:isuploaded','p:isexcel','p:sheet','p:range','p:interpres','p:nargs','p:scaledata','p:tableexcelfilename','p:tableexcelsheet','p:tableexcelrange','p:tableexceloverwrite','p:tableexcelincludeheaders','p:tableexcelseparateunits','p:defineprimfun','p:defineinv','p:resultTableFile','p:hideFrameSettings','p:defvars','p:frame','p:relaxnamecheck','p:extrap','p:extrapvalue','p:argunit','p:fununit','p:plotinv','p:definerandom','p:randomnargs','p:randomrange','p:leftend','p:rightend'</NodeDefaultValues>
+      <FunctionFeatureList tag="feature" name="Functions">
+        <!-- User comments -->
+        <entityComments T="0"></entityComments>
+        <!-- Created by -->
+        <entityAuthor T="0"></entityAuthor>
+        <!-- Creation time -->
+        <entityCreationTime T="11">1513341212665</entityCreationTime>
+      </FunctionFeatureList>
+    </FunctionFeature>
+  </FunctionFeatureList>
+  <ExprList tag="expr" name="Variables">
+    <!-- User comments -->
+    <entityComments T="0"></entityComments>
+    <!-- Created by -->
+    <entityAuthor T="0"></entityAuthor>
+    <!-- Creation time -->
+    <entityCreationTime T="11">1510089324045</entityCreationTime>
+  </ExprList>
+  <FrameList tag="frame" name="List">
+    <!-- User comments -->
+    <entityComments T="0"></entityComments>
+    <!-- Created by -->
+    <entityAuthor T="0"></entityAuthor>
+    <!-- Creation time -->
+    <entityCreationTime T="11">1510089324046</entityCreationTime>
+    <Frame tag="material1">
+      <!-- Geometry -->
+      <geom T="50">/geom/geom1</geom>
+      <FrameFeatureList tag="sshape" name="List">
+        <!-- User comments -->
+        <entityComments T="0"></entityComments>
+        <!-- Created by -->
+        <entityAuthor T="0"></entityAuthor>
+        <!-- Creation time -->
+        <entityCreationTime T="11">1510089324711</entityCreationTime>
+        <FrameFeature tag="fixed1">
+          <selection T="32" selection="LocalSelection" selType="GEOM">
+            <explicit geom="/geom/geom1"/>
+          </selection>
+          <!-- Type of frame feature -->
+          <type T="109">FIXED_REF</type>
+          <!-- Reference frame -->
+          <refFrame T="50">/frame/geometry1</refFrame>
+        </FrameFeature>
+      </FrameFeatureList>
+    </Frame>
+    <Frame tag="spatial1">
+      <!-- Geometry -->
+      <geom T="50">/geom/geom1</geom>
+      <!-- Should frame be removed when physics list is empty -->
+      <removableFrame T="3">false</removableFrame>
+      <FrameFeatureList tag="sshape" name="List">
+        <!-- User comments -->
+        <entityComments T="0"></entityComments>
+        <!-- Created by -->
+        <entityAuthor T="0"></entityAuthor>
+        <!-- Creation time -->
+        <entityCreationTime T="11">1510089324758</entityCreationTime>
+        <FrameFeature tag="fixed1">
+          <selection T="32" selection="LocalSelection" selType="GEOM">
+            <explicit geom="/geom/geom1"/>
+          </selection>
+          <!-- Type of frame feature -->
+          <type T="109">FIXED_REF</type>
+          <!-- Reference frame -->
+          <refFrame T="50">/frame/material1</refFrame>
+        </FrameFeature>
+      </FrameFeatureList>
+    </Frame>
+    <Frame tag="geometry1">
+      <!-- Geometry -->
+      <geom T="50">/geom/geom1</geom>
+      <!-- Should frame be removed when physics list is empty -->
+      <removableFrame T="3">false</removableFrame>
+      <FrameFeatureList tag="sshape" name="List">
+        <!-- User comments -->
+        <entityComments T="0"></entityComments>
+        <!-- Created by -->
+        <entityAuthor T="0"></entityAuthor>
+        <!-- Creation time -->
+        <entityCreationTime T="11">1510089324774</entityCreationTime>
+        <FrameFeature tag="fixed1">
+          <selection T="32" selection="LocalSelection" selType="GEOM">
+            <explicit geom="/geom/geom1"/>
+          </selection>
+          <!-- Type of frame feature -->
+          <type T="109">FIXED_REF</type>
+          <!-- Reference frame -->
+          <refFrame T="50">/frame/mesh1</refFrame>
+        </FrameFeature>
+      </FrameFeatureList>
+    </Frame>
+    <Frame tag="mesh1">
+      <!-- Geometry -->
+      <geom T="50">/geom/geom1</geom>
+      <!-- Should frame be removed when physics list is empty -->
+      <removableFrame T="3">false</removableFrame>
+      <FrameFeatureList tag="sshape" name="List">
+        <!-- User comments -->
+        <entityComments T="0"></entityComments>
+        <!-- Created by -->
+        <entityAuthor T="0"></entityAuthor>
+        <!-- Creation time -->
+        <entityCreationTime T="11">1510089324789</entityCreationTime>
+      </FrameFeatureList>
+    </Frame>
+  </FrameList>
+  <SelectionList tag="selection" name="List">
+    <!-- User comments -->
+    <entityComments T="0"></entityComments>
+    <!-- Created by -->
+    <entityAuthor T="0"></entityAuthor>
+    <!-- Creation time -->
+    <entityCreationTime T="11">1510089324046</entityCreationTime>
+  </SelectionList>
+  <PairList tag="pair" name="List">
+    <!-- User comments -->
+    <entityComments T="0"></entityComments>
+    <!-- Created by -->
+    <entityAuthor T="0"></entityAuthor>
+    <!-- Creation time -->
+    <entityCreationTime T="11">1510089324046</entityCreationTime>
+  </PairList>
+  <ExtraDimList tag="extraDim" name="List">
+    <!-- User comments -->
+    <entityComments T="0"></entityComments>
+    <!-- Created by -->
+    <entityAuthor T="0"></entityAuthor>
+    <!-- Creation time -->
+    <entityCreationTime T="11">1510089324046</entityCreationTime>
+  </ExtraDimList>
+  <ViewList tag="view" name="Views">
+    <!-- User comments -->
+    <entityComments T="0"></entityComments>
+    <!-- Created by -->
+    <entityAuthor T="0"></entityAuthor>
+    <!-- Creation time -->
+    <entityCreationTime T="11">1510089324046</entityCreationTime>
+    <View op="ModelView2D" tag="view1" name="View 1">
+      <!-- Node status -->
+      <entityFlags T="51">NODEACTIVATE</entityFlags>
+      <!-- User comments -->
+      <entityComments T="0"></entityComments>
+      <!-- Created by -->
+      <entityAuthor T="0"></entityAuthor>
+      <!-- Creation time -->
+      <entityCreationTime T="11">1510089324758</entityCreationTime>
+      <!-- Last modification time -->
+      <entityModifyTime T="11">1510089886011</entityModifyTime>
+      <!-- Updated by -->
+      <entityModifiedBy T="0"></entityModifiedBy>
+      <geom T="50">/geom/geom1</geom>
+      <!-- Spatial dimension -->
+      <sdim T="5">2</sdim>
+      <!-- Current -->
+      <current T="3">true</current>
+      <!-- Global current -->
+      <globalcurrent T="3">true</globalcurrent>
+      <NodeDefaultValues>11,'p:showlabels','p:showDirections','p:showgrid','p:rendermesh','p:locked','p:showunits','p:plotgroupunits','p:hidestatus','p:isnew','p:postviewkey','p:workplaneclip'</NodeDefaultValues>
+      <ViewFeature op="Axis2D" tag="axis" name="Axis">
+        <!-- Node status -->
+        <entityFlags T="51">NOREMOVE|NODEACTIVATE</entityFlags>
+        <!-- User comments -->
+        <entityComments T="0"></entityComments>
+        <!-- Created by -->
+        <entityAuthor T="0"></entityAuthor>
+        <!-- Creation time -->
+        <entityCreationTime T="11">1510089324758</entityCreationTime>
+        <!-- Last modification time -->
+        <entityModifyTime T="11">1513341302359</entityModifyTime>
+        <!-- Updated by -->
+        <entityModifiedBy T="0"></entityModifiedBy>
+        <!-- X_minimum#x -->
+        <propertyValue T="30" value="-0.12335815280675888" name="p:xmin"></propertyValue>
+        <!-- X_maximum#x -->
+        <propertyValue T="30" value="0.14354094862937927" name="p:xmax"></propertyValue>
+        <!-- X_minimum#y -->
+        <propertyValue T="30" value="-0.06221327185630798" name="p:ymin"></propertyValue>
+        <!-- X_maximum#y -->
+        <propertyValue T="30" value="0.08615443110466003" name="p:ymax"></propertyValue>
+        <!-- # minimum -->
+        <propertyValue T="30" value="-0.12335815280675888" name="p:xminhidden"></propertyValue>
+        <!-- # maximum -->
+        <propertyValue T="30" value="0.14354094862937927" name="p:xmaxhidden"></propertyValue>
+        <!-- # minimum -->
+        <propertyValue T="30" value="-0.06221327185630798" name="p:yminhidden"></propertyValue>
+        <!-- # maximum -->
+        <propertyValue T="30" value="0.08615443110466003" name="p:ymaxhidden"></propertyValue>
+        <!-- left ratio -->
+        <propertyValue T="30" value="-0.11679080128669739" name="p:abstractviewlratio"></propertyValue>
+        <!-- right ratio -->
+        <propertyValue T="30" value="0.21770478785037994" name="p:abstractviewrratio"></propertyValue>
+        <!-- bottom ratio -->
+        <propertyValue T="30" value="-0.015809068456292152" name="p:abstractviewbratio"></propertyValue>
+        <!-- top ratio -->
+        <propertyValue T="30" value="0.04396023601293564" name="p:abstractviewtratio"></propertyValue>
+        <!-- x scale -->
+        <propertyValue T="30" value="2.7123893960379064E-4" name="p:abstractviewxscale"></propertyValue>
+        <!-- y scale -->
+        <propertyValue T="30" value="2.7123893960379064E-4" name="p:abstractviewyscale"></propertyValue>
+        <!-- Extra_X#x -->
+        <propertyValue T="30" value="" valueMatrix="1|0" name="p:xextra"></propertyValue>
+        <!-- Extra_X#y -->
+        <propertyValue T="30" value="" valueMatrix="1|0" name="p:yextra"></propertyValue>
+        <NodeDefaultValues>26,'p:viewscaletype','p:autocontext','p:xweight','p:yweight','p:xscale','p:yscale','p:abstractviewsetting','p:manualgrid','p:xspacing','p:yspacing','p:xextra_vector_method','p:xextra_vector_start','p:xextra_vector_stop','p:xextra_vector_step','p:xextra_vector_numvalues','p:xextra_vector_function','p:xextra_vector_interval','p:xextra_vector_freqperdec','p:yextra_vector_method','p:yextra_vector_start','p:yextra_vector_stop','p:yextra_vector_step','p:yextra_vector_numvalues','p:yextra_vector_function','p:yextra_vector_interval','p:yextra_vector_freqperdec'</NodeDefaultValues>
+      </ViewFeature>
+      <ViewFeatureList tag="feature" name="List">
+        <!-- User comments -->
+        <entityComments T="0"></entityComments>
+        <!-- Created by -->
+        <entityAuthor T="0"></entityAuthor>
+        <!-- Creation time -->
+        <entityCreationTime T="11">1510089324758</entityCreationTime>
+      </ViewFeatureList>
+      <HideDrawList tag="hideObjects" name="List">
+        <!-- User comments -->
+        <entityComments T="0"></entityComments>
+        <!-- Created by -->
+        <entityAuthor T="0"></entityAuthor>
+        <!-- Creation time -->
+        <entityCreationTime T="11">1510089324758</entityCreationTime>
+      </HideDrawList>
+      <HideGeomList tag="hideEntities" name="List">
+        <!-- User comments -->
+        <entityComments T="0"></entityComments>
+        <!-- Created by -->
+        <entityAuthor T="0"></entityAuthor>
+        <!-- Creation time -->
+        <entityCreationTime T="11">1510089324758</entityCreationTime>
+      </HideGeomList>
+      <HideMeshList tag="hideMesh" name="List">
+        <!-- User comments -->
+        <entityComments T="0"></entityComments>
+        <!-- Created by -->
+        <entityAuthor T="0"></entityAuthor>
+        <!-- Creation time -->
+        <entityCreationTime T="11">1510089324758</entityCreationTime>
+      </HideMeshList>
+    </View>
+  </ViewList>
+  <MaterialList tag="material" name="Materials">
+    <!-- User comments -->
+    <entityComments T="0"></entityComments>
+    <!-- Created by -->
+    <entityAuthor T="0"></entityAuthor>
+    <!-- Creation time -->
+    <entityCreationTime T="11">1510089324046</entityCreationTime>
+  </MaterialList>
+  <MeshList tag="mesh" name="Mesh Parts">
+    <!-- User comments -->
+    <entityComments T="0"></entityComments>
+    <!-- Created by -->
+    <entityAuthor T="0"></entityAuthor>
+    <!-- Creation time -->
+    <entityCreationTime T="11">1510089324046</entityCreationTime>
+    <MeshSequence tag="mesh1" name="Mesh 1">
+      <!-- Node status -->
+      <entityFlags T="51">NODEACTIVATE</entityFlags>
+      <!-- User comments -->
+      <entityComments T="0"></entityComments>
+      <!-- Created by -->
+      <entityAuthor T="0"></entityAuthor>
+      <!-- Creation time -->
+      <entityCreationTime T="11">1510089324820</entityCreationTime>
+      <!-- Last modification time -->
+      <entityModifyTime T="11">1513341302359</entityModifyTime>
+      <!-- Updated by -->
+      <entityModifiedBy T="0"></entityModifiedBy>
+      <currentFeature T="50">/mesh/mesh1/feature/ftri1</currentFeature>
+      <lastBuiltFeature T="50">/mesh/mesh1/feature/ftri1</lastBuiltFeature>
+      <!-- Geometry sequence -->
+      <geom T="50">/geom/geom1</geom>
+      <!-- Physics induced mesh -->
+      <autogenerated T="3">false</autogenerated>
+      <!-- Mesh control entities to keep -->
+      <constructionEntitiesToKeep T="7">{},{},{}</constructionEntitiesToKeep>
+      <!-- Cache tag -->
+      <cacheTagCurrent T="11">7507840919431719854</cacheTagCurrent>
+      <!-- Ignore import assoc -->
+      <statIgnoreAssocData T="3">true</statIgnoreAssocData>
+      <MeshFeatureList tag="feature" name="List">
+        <!-- User comments -->
+        <entityComments T="0"></entityComments>
+        <!-- Created by -->
+        <entityAuthor T="0"></entityAuthor>
+        <!-- Creation time -->
+        <entityCreationTime T="11">1510089324820</entityCreationTime>
+        <!-- Last modification time -->
+        <entityModifyTime T="11">1510089886011</entityModifyTime>
+        <!-- Updated by -->
+        <entityModifiedBy T="0"></entityModifiedBy>
+        <sequence T="50">/mesh/mesh1</sequence>
+        <MeshFeature op="MeshSizeDefault" tag="size" name="Size">
+          <!-- Node status -->
+          <entityFlags T="51">NOREMOVE|NORETAG|NODEACTIVATE</entityFlags>
+          <!-- User comments -->
+          <entityComments T="0"></entityComments>
+          <!-- Created by -->
+          <entityAuthor T="0"></entityAuthor>
+          <!-- Creation time -->
+          <entityCreationTime T="11">1510089795787</entityCreationTime>
+          <!-- Last modification time -->
+          <entityModifyTime T="11">1510256763339</entityModifyTime>
+          <!-- Updated by -->
+          <entityModifiedBy T="0"></entityModifiedBy>
+          <!-- Key containing all property values -->
+          <key T="0">true[deg]tabledefaulthmax0.0134hmin6.0E-5hcurve0.3hnarrow1.0hgrad1.3extrHsh=0</key>
+          <!-- Current feature status -->
+          <status T="101">BUILT</status>
+          <!-- Status of last build operation -->
+          <buildStatus T="101">BUILT</buildStatus>
+          <!-- Maximum element size -->
+          <propertyValue T="30" value="0.0134" name="p:hmax"></propertyValue>
+          <!-- Minimum element size -->
+          <propertyValue T="30" value="6.0E-5" name="p:hmin"></propertyValue>
+          <!-- Curvature factor -->
+          <propertyValue T="30" value="0.3" name="p:hcurve"></propertyValue>
+          <!-- Maximum element growth rate -->
+          <propertyValue T="30" value="1.3" name="p:hgrad"></propertyValue>
+          <sequence T="50">/mesh/mesh1</sequence>
+          <NodeDefaultValues>4,'p:table','p:hnarrow','p:hauto','p:custom'</NodeDefaultValues>
+          <MeshFeatureList tag="feature" name="List">
+            <!-- User comments -->
+            <entityComments T="0"></entityComments>
+            <!-- Created by -->
+            <entityAuthor T="0"></entityAuthor>
+            <!-- Creation time -->
+            <entityCreationTime T="11">1510089795789</entityCreationTime>
+          </MeshFeatureList>
+        </MeshFeature>
+        <MeshFeature op="FreeTri" tag="ftri1" name="Free Triangular 1">
+          <!-- User comments -->
+          <entityComments T="0"></entityComments>
+          <!-- Created by -->
+          <entityAuthor T="0"></entityAuthor>
+          <!-- Creation time -->
+          <entityCreationTime T="11">1510089800652</entityCreationTime>
+          <!-- Last modification time -->
+          <entityModifyTime T="11">1513341302359</entityModifyTime>
+          <!-- Updated by -->
+          <entityModifiedBy T="0"></entityModifiedBy>
+          <selection T="32" selection="MeshSelection" selType="GEOMDIM">
+            <explicit dim="2" hDim="2" geom="/geom/geom1" entities="4,1,2,3"/>
+          </selection>
+          <!-- Key containing all property values -->
+          <key T="0">true[deg]continueonxscale1.0yscale1.0smoothcontrolonsmoothmaxiter8smoothmaxdepth8methodautoGEOMDIMModel2geom1[2][1, 2, 3]true[deg]tabledefaulthmax0.0015hmaxactiveonhmin0.0015hminactiveonhcurve0.3hcurveactiveoffhnarrow1.0hnarrowactiveoffhgrad1.3hgradactiveoffGEOMDIMModel2geom1[2][1, 2, 3]extrHsh=0extrHsh=0</key>
+          <!-- Current feature status -->
+          <status T="101">BUILT</status>
+          <!-- Status of last build operation -->
+          <buildStatus T="101">BUILT</buildStatus>
+          <sequence T="50">/mesh/mesh1</sequence>
+          <NodeDefaultValues>7,'p:continue','p:xscale','p:yscale','p:smoothcontrol','p:smoothmaxiter','p:smoothmaxdepth','p:method'</NodeDefaultValues>
+          <MeshFeatureList tag="feature" name="List">
+            <!-- User comments -->
+            <entityComments T="0"></entityComments>
+            <!-- Created by -->
+            <entityAuthor T="0"></entityAuthor>
+            <!-- Creation time -->
+            <entityCreationTime T="11">1510089800652</entityCreationTime>
+            <sequence T="50">/mesh/mesh1</sequence>
+            <MeshFeature op="Size" tag="size1" name="Size 1">
+              <!-- User comments -->
+              <entityComments T="0"></entityComments>
+              <!-- Created by -->
+              <entityAuthor T="0"></entityAuthor>
+              <!-- Creation time -->
+              <entityCreationTime T="11">1510089819877</entityCreationTime>
+              <!-- Last modification time -->
+              <entityModifyTime T="11">1513341302359</entityModifyTime>
+              <!-- Updated by -->
+              <entityModifiedBy T="0"></entityModifiedBy>
+              <selection T="32" selection="MeshSelection" selType="GEOMDIM">
+                <explicit dim="2" hDim="2" geom="/geom/geom1" entities="4,1,2,3"/>
+              </selection>
+              <!-- Current feature status -->
+              <status T="101">BUILT</status>
+              <!-- Status of last build operation -->
+              <buildStatus T="101">BUILT</buildStatus>
+              <!-- Maximum element size -->
+              <propertyValue T="30" value="0.0015" name="p:hmax"></propertyValue>
+              <!-- Minimum element size -->
+              <propertyValue T="30" value="0.0015" name="p:hmin"></propertyValue>
+              <!-- Curvature factor -->
+              <propertyValue T="30" value="0.3" name="p:hcurve"></propertyValue>
+              <!-- Curvature factor -->
+              <propertyValue T="30" value="off" name="p:hcurveactive"></propertyValue>
+              <!-- Resolution of narrow regions -->
+              <propertyValue T="30" value="off" name="p:hnarrowactive"></propertyValue>
+              <!-- Maximum element growth rate -->
+              <propertyValue T="30" value="1.3" name="p:hgrad"></propertyValue>
+              <!-- Maximum element growth rate -->
+              <propertyValue T="30" value="off" name="p:hgradactive"></propertyValue>
+              <!-- Custom element size -->
+              <propertyValue T="30" value="on" name="p:custom"></propertyValue>
+              <sequence T="50">/mesh/mesh1</sequence>
+              <NodeDefaultValues>5,'p:table','p:hmaxactive','p:hminactive','p:hnarrow','p:hauto'</NodeDefaultValues>
+              <MeshFeatureList tag="feature" name="List">
+                <!-- User comments -->
+                <entityComments T="0"></entityComments>
+                <!-- Created by -->
+                <entityAuthor T="0"></entityAuthor>
+                <!-- Creation time -->
+                <entityCreationTime T="11">1510089819883</entityCreationTime>
+              </MeshFeatureList>
+            </MeshFeature>
+          </MeshFeatureList>
+        </MeshFeature>
+      </MeshFeatureList>
+      <MeshNative tag="meshnative">
+        <!-- Space dimension. -->
+        <spaceDim T="5">2</spaceDim>
+        <!-- Number of entities. -->
+        <numEntities T="6">9,11,3</numEntities>
+        <!-- Number of entities for mesh control. -->
+        <numEntitiesMesh T="6">9,11,3</numEntitiesMesh>
+        <!-- Number of finite void regions. -->
+        <numFiniteVoids T="5">0</numFiniteVoids>
+        <!-- Geometry exists. -->
+        <existing T="3">true</existing>
+        <!-- Size. -->
+        <geomScale T="12">0.1</geomScale>
+        <!-- Relative tolerance. -->
+        <geomTol T="12">1.0E-10</geomTol>
+        <!-- Object type -->
+        <type T="0">solid</type>
+        <!-- Mesh object -->
+        <mesh T="52" class="MESH" resource="mesh1.mphbin" id="ef22e9e736fd1551" fileid="aef91e6ff9794511"/>
+      </MeshNative>
+    </MeshSequence>
+  </MeshList>
+  <BatchList tag="batch">
+    <BatchFeatureList tag="feature" name="List">
+      <!-- User comments -->
+      <entityComments T="0"></entityComments>
+      <!-- Created by -->
+      <entityAuthor T="0"></entityAuthor>
+      <!-- Creation time -->
+      <entityCreationTime T="11">1510089324695</entityCreationTime>
+      <batchList T="50">/batch</batchList>
+    </BatchFeatureList>
+  </BatchList>
+  <OptSequence tag="optsequence">
+    <OptFeatureList op="objective" tag="objective" name="List">
+      <!-- User comments -->
+      <entityComments T="0"></entityComments>
+      <!-- Created by -->
+      <entityAuthor T="0"></entityAuthor>
+      <!-- Creation time -->
+      <entityCreationTime T="11">1510089324046</entityCreationTime>
+      <optListType T="114">OBJECTIVE</optListType>
+      <!-- Sequence -->
+      <sequence T="50">/optsequence</sequence>
+    </OptFeatureList>
+  </OptSequence>
+  <StudyList tag="study" name="List">
+    <!-- User comments -->
+    <entityComments T="0"></entityComments>
+    <!-- Created by -->
+    <entityAuthor T="0"></entityAuthor>
+    <!-- Creation time -->
+    <entityCreationTime T="11">1510089324046</entityCreationTime>
+    <Study tag="std1" name="Study 1">
+      <!-- Node status -->
+      <entityFlags T="51">NODEACTIVATE</entityFlags>
+      <!-- User comments -->
+      <entityComments T="0"></entityComments>
+      <!-- Created by -->
+      <entityAuthor T="0"></entityAuthor>
+      <!-- Creation time -->
+      <entityCreationTime T="11">1510089327371</entityCreationTime>
+      <ModelEntityTag tag="Analysis">
+        <!-- List of tags -->
+        <values T="1">1,'std1'</values>
+      </ModelEntityTag>
+      <StudyFeatureList tag="feature" name="List">
+        <!-- User comments -->
+        <entityComments T="0"></entityComments>
+        <!-- Created by -->
+        <entityAuthor T="0"></entityAuthor>
+        <!-- Creation time -->
+        <entityCreationTime T="11">1510089327371</entityCreationTime>
+        <StudyFeature op="Frequency" tag="freq" name="Frequency Domain">
+          <!-- User comments -->
+          <entityComments T="0"></entityComments>
+          <!-- Created by -->
+          <entityAuthor T="0"></entityAuthor>
+          <!-- Creation time -->
+          <entityCreationTime T="11">1510089327418</entityCreationTime>
+          <!-- Frequency unit -->
+          <propertyValue T="30" value="GHz" name="p:punit"></propertyValue>
+          <!-- Frequencies -->
+          <propertyValue T="30" value="1[GHz]" valueMatrix="1|1,'1000000000'" name="p:plist"></propertyValue>
+          <!-- Show_geometric_nonlinearity -->
+          <propertyValue T="30" value="off" name="p:showGeometricNonlinearity"></propertyValue>
+          <!-- Plot group -->
+          <propertyValue T="30" value="Default" name="p:plotgroup" ReferenceContainerList="/result/feature" CompositeIndex="0"></propertyValue>
+          <!-- Probes -->
+          <propertyValue T="30" name="p:probes" ReferenceArray="0" ReferenceContainerList="/probe"></propertyValue>
+          <!-- Physics interfaces -->
+          <propertyValue T="30" name="p:physselection" Reference="/physics/emw" ReferenceContainerList="/physics"></propertyValue>
+          <!-- Use in this study -->
+          <propertyValue T="30" valueMatrix="1|2,'emw','on'" name="p:activate"></propertyValue>
+          <!-- Discretization -->
+          <propertyValue T="30" value="physics" valueMatrix="1|2,'emw','physics'" name="p:discretization"></propertyValue>
+          <!-- Disabled variables -->
+          <propertyValue T="30" name="p:disabledvariables" ReferenceArray="0" ReferenceContainerList="/expr"></propertyValue>
+          <!-- Disabled_coordinate_systems -->
+          <propertyValue T="30" name="p:disabledcoordinatesystems" ReferenceArray="0" ReferenceContainerList="/coordsys"></propertyValue>
+          <!-- Coupling_features -->
+          <propertyValue T="30" name="p:multiphysicsSelection" ReferenceContainerList="/multiphysics"></propertyValue>
+          <!-- Use in this study -->
+          <propertyValue T="30" value="on" valueMatrix="1|0" name="p:activateCoupling"></propertyValue>
+          <!-- Reduced models -->
+          <propertyValue T="30" name="p:romselection" ReferenceContainerList="/reduced"></propertyValue>
+          <!-- Use in this study -->
+          <propertyValue T="30" value="off" valueMatrix="1|0" name="p:activaterom"></propertyValue>
+          <!-- Physics_interfaces_not_solved_for -->
+          <propertyValue T="30" name="p:reconstructables" ReferenceContainerList="/physics"></propertyValue>
+          <!-- Reconstruction -->
+          <propertyValue T="30" value="none" valueMatrix="1|0" name="p:reconstructors"></propertyValue>
+          <!-- Study -->
+          <propertyValue T="30" value="zero" name="p:initstudy" ReferenceContainerList="/study" CompositeIndex="0"></propertyValue>
+          <!-- Solution -->
+          <propertyValue T="30" value="current" name="p:initsol" ReferenceContainerList="/sol" CompositeIndex="0"></propertyValue>
+          <!-- Use -->
+          <propertyValue T="30" value="current" name="p:initsoluse" ReferenceContainerList="/sol" CompositeIndex="0"></propertyValue>
+          <!-- Selection -->
+          <propertyValue T="30" value="auto" name="p:solnum" CompositeIndex="0"></propertyValue>
+          <!-- Study -->
+          <propertyValue T="30" value="zero" name="p:notstudy" ReferenceContainerList="/study" CompositeIndex="0"></propertyValue>
+          <!-- Solution -->
+          <propertyValue T="30" value="current" name="p:notsol" ReferenceContainerList="/sol" CompositeIndex="0"></propertyValue>
+          <!-- Use -->
+          <propertyValue T="30" value="current" name="p:notsoluse" ReferenceContainerList="/sol" CompositeIndex="0"></propertyValue>
+          <!-- Selection -->
+          <propertyValue T="30" value="auto" name="p:notsolnum" CompositeIndex="0"></propertyValue>
+          <!-- Selections -->
+          <propertyValue T="30" name="p:storesel" ReferenceArray="0" ReferenceContainerList="/selection"></propertyValue>
+          <!-- Geometries -->
+          <propertyValue T="30" name="p:geomselection" Reference="/geom/geom1" ReferenceContainerList="/geom"></propertyValue>
+          <!-- Mesh -->
+          <propertyValue T="30" valueMatrix="1|2,'geom1','mesh1'" name="p:mesh"></propertyValue>
+          <!-- Adaptation in geometry -->
+          <propertyValue T="30" name="p:adapgeom" Reference="/geom/geom1" ReferenceContainerList="/geom"></propertyValue>
+          <!-- Weights -->
+          <propertyValue T="30" value="1" valueMatrix="1|1,'1'" name="p:weights"></propertyValue>
+          <!-- Save solution on every refined mesh -->
+          <propertyValue T="30" value="off" name="p:savesolsref"></propertyValue>
+          <!-- Parameter values -->
+          <propertyValue T="30" value="" valueMatrix="1|0" name="p:plist_aux"></propertyValue>
+          <!-- Define load cases -->
+          <propertyValue T="30" name="p:useloadcase">null</propertyValue>
+          <!-- Load cases -->
+          <propertyValue T="30" name="p:loadcase">null</propertyValue>
+          <!-- Load_group_status -->
+          <propertyValue T="30" name="p:loadgroup">null</propertyValue>
+          <!-- Load_group_weight -->
+          <propertyValue T="30" name="p:loadgroupweight">null</propertyValue>
+          <!-- Constraint_group_status -->
+          <propertyValue T="30" name="p:constraintgroup">null</propertyValue>
+          <!-- Adaptive mesh refinement -->
+          <propertyValue T="30" name="p:timeadaption">null</propertyValue>
+          <!-- Adaptation in geometry -->
+          <propertyValue T="30" name="p:timeadapgeom">null</propertyValue>
+          <!-- Automatic remeshing -->
+          <propertyValue T="30" name="p:autoremesh">null</propertyValue>
+          <!-- Remesh in geometry -->
+          <propertyValue T="30" name="p:autoremeshgeom">null</propertyValue>
+          <!-- Optimization -->
+          <propertyValue T="30" name="p:optimization">null</propertyValue>
+          <NodeDefaultValues>134,'p:updateOptimizationSettings','p:ftplistmethod','p:showflist','p:usefrequnit','p:plist_vector_method','p:plist_vector_start','p:plist_vector_stop','p:plist_vector_step','p:plist_vector_numvalues','p:plist_vector_function','p:plist_vector_interval','p:plist_vector_freqperdec','p:loadparameters','p:showpreusesol','p:preusesol','p:geometricNonlinearityActive','p:geometricNonlinearity','p:outputhide','p:plot','p:probesel','p:physselectionhide','p:useadvanceddisable','p:activateimage','p:disabledphysics','p:disableFrameControl','p:activatecouplingimage','p:multiphysicsSelectionhide','p:disabledcoupling','p:disabledreduced','p:romselectionhide','p:activateimagerom','p:activateimagereconstruct','p:reconstructableshide','p:useinitsol','p:initmethod','p:initstudyhide','p:initsolhide','p:oldinitsoluse','p:initstudystep','p:solnumhide','p:solvertype','p:timeinterp','p:t','p:manualsol','p:manualsolnum','p:listsol','p:listsolnum','p:usesol','p:notsolmethod','p:notstudyhide','p:notsolhide','p:oldnotsoluse','p:notstudystep','p:notsolnumhide','p:notsolvertype','p:nottimeinterp','p:nott','p:notmanualsol','p:notmanualsolnum','p:notmanualsolnum_vector_method','p:notmanualsolnum_vector_start','p:notmanualsolnum_vector_stop','p:notmanualsolnum_vector_step','p:notmanualsolnum_vector_numvalues','p:notmanualsolnum_vector_function','p:notmanualsolnum_vector_interval','p:notmanualsolnum_vector_freqperdec','p:notlistsol','p:notlistsolnum','p:usestoresel','p:errestandadap','p:errestim','p:l2scale','p:l2staborder','p:goalfunctype','p:goalfuncpredef','p:gfuncpd','p:gfintops','p:gfunc','p:selection','p:adapsolnum','p:adapsolnum_vector_method','p:adapsolnum_vector_start','p:adapsolnum_vector_stop','p:adapsolnum_vector_step','p:adapsolnum_vector_numvalues','p:adapsolnum_vector_function','p:adapsolnum_vector_interval','p:adapsolnum_vector_freqperdec','p:weights_vector_method','p:weights_vector_start','p:weights_vector_stop','p:weights_vector_step','p:weights_vector_numvalues','p:weights_vector_function','p:weights_vector_interval','p:weights_vector_freqperdec','p:showadjppr','p:adjppr','p:rmethod','p:maxscale','p:resorderactive','p:resorder','p:elselect','p:globalminpar','p:worstpar','p:elementspar','p:ngen','p:maxt','p:accerrest','p:accrespairs','p:accerrpairs','p:accvarerrpairs','p:auxsweepmethod','p:showuseparam','p:useparam','p:sweeptype','p:pname_aux','p:plistarr_aux','p:plistarr_aux_vector_method','p:plistarr_aux_vector_start','p:plistarr_aux_vector_stop','p:plistarr_aux_vector_step','p:plistarr_aux_vector_numvalues','p:plistarr_aux_vector_function','p:plistarr_aux_vector_interval','p:plistarr_aux_vector_freqperdec','p:punit_aux','p:pcontinuationmode','p:pcontinuation','p:awe','p:awefunc','p:showdistribute','p:pdistrib'</NodeDefaultValues>
+          <ModelEntityTag tag="Analysis">
+            <!-- List of tags -->
+            <values T="1">1,'std1/freq'</values>
+          </ModelEntityTag>
+          <MultigridLevelList tag="mglevel" name="List">
+            <!-- User comments -->
+            <entityComments T="0"></entityComments>
+            <!-- Created by -->
+            <entityAuthor T="0"></entityAuthor>
+            <!-- Creation time -->
+            <entityCreationTime T="11">1510089327481</entityCreationTime>
+          </MultigridLevelList>
+        </StudyFeature>
+      </StudyFeatureList>
+      <InformationList tag="information" name="Information">
+        <!-- User comments -->
+        <entityComments T="0"></entityComments>
+        <!-- Created by -->
+        <entityAuthor T="0"></entityAuthor>
+        <!-- Creation time -->
+        <entityCreationTime T="11">1510256522338</entityCreationTime>
+        <Information tag="lastComputationTime">
+          <title T="0">Last_computation_time</title>
+          <body T="0"></body>
+        </Information>
+      </InformationList>
+    </Study>
+  </StudyList>
+  <SolverSequenceList tag="sol" name="List">
+    <!-- User comments -->
+    <entityComments T="0"></entityComments>
+    <!-- Created by -->
+    <entityAuthor T="0"></entityAuthor>
+    <!-- Creation time -->
+    <entityCreationTime T="11">1510089324046</entityCreationTime>
+  </SolverSequenceList>
+  <Results tag="result" name="Results">
+    <!-- Node status -->
+    <entityFlags T="51">NOREMOVE|NODEACTIVATE</entityFlags>
+    <!-- User comments -->
+    <entityComments T="0"></entityComments>
+    <!-- Created by -->
+    <entityAuthor T="0"></entityAuthor>
+    <!-- Creation time -->
+    <entityCreationTime T="11">1510089324047</entityCreationTime>
+    <DatasetFeatureList tag="dataset" name="Data Sets">
+      <!-- User comments -->
+      <entityComments T="0"></entityComments>
+      <!-- Created by -->
+      <entityAuthor T="0"></entityAuthor>
+      <!-- Creation time -->
+      <entityCreationTime T="11">1510089324047</entityCreationTime>
+    </DatasetFeatureList>
+    <ExportFeatureList tag="export" name="Export">
+      <!-- User comments -->
+      <entityComments T="0"></entityComments>
+      <!-- Created by -->
+      <entityAuthor T="0"></entityAuthor>
+      <!-- Creation time -->
+      <entityCreationTime T="11">1510089324047</entityCreationTime>
+    </ExportFeatureList>
+    <NumericalFeatureList tag="numerical" name="Derived Values">
+      <!-- User comments -->
+      <entityComments T="0"></entityComments>
+      <!-- Created by -->
+      <entityAuthor T="0"></entityAuthor>
+      <!-- Creation time -->
+      <entityCreationTime T="11">1510089324047</entityCreationTime>
+    </NumericalFeatureList>
+    <TableFeatureList tag="table" name="Tables">
+      <!-- User comments -->
+      <entityComments T="0"></entityComments>
+      <!-- Created by -->
+      <entityAuthor T="0"></entityAuthor>
+      <!-- Creation time -->
+      <entityCreationTime T="11">1510089324047</entityCreationTime>
+    </TableFeatureList>
+    <ResultFeatureList tag="feature" name="List">
+      <!-- User comments -->
+      <entityComments T="0"></entityComments>
+      <!-- Created by -->
+      <entityAuthor T="0"></entityAuthor>
+      <!-- Creation time -->
+      <entityCreationTime T="11">1510089324095</entityCreationTime>
+    </ResultFeatureList>
+    <ResultParam tag="param" name="Parameters">
+      <!-- User comments -->
+      <entityComments T="0"></entityComments>
+      <!-- Created by -->
+      <entityAuthor T="0"></entityAuthor>
+      <!-- Creation time -->
+      <entityCreationTime T="11">1510089324320</entityCreationTime>
+    </ResultParam>
+    <ReportFeatureList tag="report" name="Reports">
+      <!-- User comments -->
+      <entityComments T="0"></entityComments>
+      <!-- Created by -->
+      <entityAuthor T="0"></entityAuthor>
+      <!-- Creation time -->
+      <entityCreationTime T="11">1510089324320</entityCreationTime>
+    </ReportFeatureList>
+  </Results>
+  <GeomManagerNative tag="geomManagerNative">
+    <!-- Last modification time -->
+    <entityModifyTime T="11">1510256763339</entityModifyTime>
+    <!-- Updated by -->
+    <entityModifiedBy T="0"></entityModifiedBy>
+    <!-- Last used GeomFeature identifier -->
+    <lastID T="5">10</lastID>
+    <geomManager T="52" class="GEOMMANAGER" resource="geommanager1.mphbin" id="1" fileid="d5699d0497f66dbc"/>
+  </GeomManagerNative>
+  <History tag="hist">
+    <!-- Last modification time -->
+    <entityModifyTime T="11">1513341302359</entityModifyTime>
+    <!-- Updated by -->
+    <entityModifiedBy T="0"></entityModifiedBy>
+    <!-- List of commands -->
+    <actions T="0">t(s("/")) m(s("comments")) s("Untitled
+
+")</actions>
+    <actions T="0">t(s("/component")) m(s("create")) s("comp1") b(true)</actions>
+    <actions T="0">t(s("/component/comp1/geom")) m(s("create")) s("geom1") i(2)</actions>
+    <actions T="0">t(s("/component/comp1/mesh")) m(s("create")) s("mesh1") g(s("geom1"))</actions>
+    <actions T="0">t(s("/component/comp1/physics")) m(s("create")) s("emw") s("ElectromagneticWaves") s("geom1")</actions>
+    <actions T="0">t(s("/study")) m(s("create")) s("std1")</actions>
+    <actions T="0">t(s("/study/std1")) m(s("create")) s("freq") s("Frequency")</actions>
+    <actions T="0">t(s("/study/std1/feature/freq")) m(s("set")) s("solnum") s("auto")</actions>
+    <actions T="0">t(s("/study/std1/feature/freq")) m(s("set")) s("notsolnum") s("auto")</actions>
+    <actions T="0">t(s("/study/std1/feature/freq")) m(s("set")) s("savesolsref") b(false)</actions>
+    <actions T="0">t(s("/study/std1/feature/freq")) m(s("set")) s("ngen") s("5")</actions>
+    <actions T="0">t(s("/study/std1/feature/freq")) m(s("activate")) s("emw") b(true)</actions>
+    <actions T="0">t(s("/component/comp1/geom/geom1")) m(s("create")) s("r1") s("Rectangle")</actions>
+    <actions T="0">t(s("/component/comp1/geom/geom1/feature/r1")) m(s("set")) s("size") da(0.1,1.0)</actions>
+    <actions T="0">t(s("/component/comp1/geom/geom1/feature/r1")) m(s("set")) s("size") da(0.1,0.02)</actions>
+    <actions T="0">t(s("/component/comp1/geom/geom1")) m(s("run")) s("r1")</actions>
+    <actions T="0">t(s("/component/comp1/geom/geom1/feature/r1")) m(s("set")) s("pos") da(-0.1,0.0)</actions>
+    <actions T="0">t(s("/component/comp1/geom/geom1")) m(s("run")) s("r1")</actions>
+    <actions T="0">t(s("/component/comp1/geom/geom1")) m(s("run")) s("r1")</actions>
+    <actions T="0">t(s("/component/comp1/geom/geom1")) m(s("run")) s("r1")</actions>
+    <actions T="0">t(s("/component/comp1/geom/geom1")) m(s("run")) s("r1")</actions>
+    <actions T="0">t(s("/component/comp1/geom/geom1")) m(s("run")) s("r1")</actions>
+    <actions T="0">t(s("/component/comp1/geom/geom1")) m(s("create")) s("pol1") s("Polygon")</actions>
+    <actions T="0">t(s("/component/comp1/geom/geom1/feature/pol1")) m(s("set")) s("x") s("{0,0,-0.01}")</actions>
+    <actions T="0">t(s("/component/comp1/geom/geom1/feature/pol1")) m(s("set")) s("y") s("{0,0.02,0.02}")</actions>
+    <actions T="0">t(s("/component/comp1/geom/geom1")) m(s("run")) s("pol1")</actions>
+    <actions T="0">t(s("/component/comp1/geom/geom1")) m(s("run")) s("pol1")</actions>
+    <actions T="0">t(s("/component/comp1/geom/geom1")) m(s("create")) s("dif1") s("Difference")</actions>
+    <actions T="0">t(s("/component/comp1/geom/geom1/feature/dif1/@input/selection[geom1]")) m(s("set")) sa(s("r1"))</actions>
+    <actions T="0">t(s("/component/comp1/geom/geom1/feature/dif1/@input2/selection[geom1]")) m(s("set")) sa(s("pol1"))</actions>
+    <actions T="0">t(s("/component/comp1/geom/geom1")) m(s("run")) s("dif1")</actions>
+    <actions T="0">t(s("/component/comp1/geom/geom1")) m(s("run")) s("dif1")</actions>
+    <actions T="0">t(s("/component/comp1/geom/geom1")) m(s("create")) s("copy1") s("Copy")</actions>
+    <actions T="0">t(s("/component/comp1/geom/geom1/feature/copy1/@input/selection[geom1]")) m(s("set")) sa(s("dif1"))</actions>
+    <actions T="0">t(s("/component/comp1/geom/geom1")) m(s("run")) s("copy1")</actions>
+    <actions T="0">t(s("/component/comp1/geom/geom1")) m(s("run")) s("copy1")</actions>
+    <actions T="0">t(s("/component/comp1/geom/geom1")) m(s("create")) s("mir1") s("Mirror")</actions>
+    <actions T="0">t(s("/component/comp1/geom/geom1/feature/mir1/@input/selection[geom1]")) m(s("set")) sa(s("copy1"))</actions>
+    <actions T="0">t(s("/component/comp1/geom/geom1")) m(s("run")) s("mir1")</actions>
+    <actions T="0">t(s("/component/comp1/geom/geom1/measure/selection[geom1]")) m(s("init")) i(0)</actions>
+    <actions T="0">t(s("/component/comp1/geom/geom1/measure/selection[geom1]")) m(s("set")) s("dif1") ia(3)</actions>
+    <actions T="0">t(s("/component/comp1/geom/geom1/feature/mir1")) m(s("set")) s("axis") da(-0.01,0.0)</actions>
+    <actions T="0">t(s("/component/comp1/geom/geom1/feature/mir1")) m(s("set")) s("axis") da(-0.01,0.02)</actions>
+    <actions T="0">t(s("/component/comp1/geom/geom1")) m(s("run")) s("mir1")</actions>
+    <actions T="0">t(s("/component/comp1/geom/geom1/feature/mir1")) m(s("set")) s("axis") da(-0.01,-0.02)</actions>
+    <actions T="0">t(s("/component/comp1/geom/geom1/feature/mir1")) m(s("set")) s("axis") da(0.01,-0.02)</actions>
+    <actions T="0">t(s("/component/comp1/geom/geom1")) m(s("run")) s("mir1")</actions>
+    <actions T="0">t(s("/component/comp1/geom/geom1")) m(s("run")) s("mir1")</actions>
+    <actions T="0">t(s("/component/comp1/geom/geom1/feature/mir1")) m(s("set")) s("axis") da(0.02,-0.02)</actions>
+    <actions T="0">t(s("/component/comp1/geom/geom1/feature/mir1")) m(s("set")) s("axis") da(0.02,-0.01)</actions>
+    <actions T="0">t(s("/component/comp1/geom/geom1")) m(s("run")) s("mir1")</actions>
+    <actions T="0">t(s("/component/comp1/geom/geom1/feature/mir1")) m(s("set")) s("axis") da(-0.02,-0.01)</actions>
+    <actions T="0">t(s("/component/comp1/geom/geom1/feature/mir1")) m(s("set")) s("axis") da(-0.02,0.01)</actions>
+    <actions T="0">t(s("/component/comp1/geom/geom1")) m(s("run")) s("mir1")</actions>
+    <actions T="0">t(s("/component/comp1/geom/geom1")) m(s("run")) s("mir1")</actions>
+    <actions T="0">t(s("/component/comp1/geom/geom1")) m(s("run")) s("mir1")</actions>
+    <actions T="0">t(s("/component/comp1/geom/geom1/feature/mir1")) m(s("set")) s("axis") da(0.02,0.01)</actions>
+    <actions T="0">t(s("/component/comp1/geom/geom1")) m(s("run")) s("mir1")</actions>
+    <actions T="0">t(s("/component/comp1/geom/geom1")) m(s("run"))</actions>
+    <actions T="0">t(s("/component/comp1/mesh/mesh1")) m(s("create")) s("ftri1") s("FreeTri")</actions>
+    <actions T="0">t(s("/component/comp1/mesh/mesh1/feature/ftri1/selection[geom1]")) m(s("geom")) s("geom1") i(2)</actions>
+    <actions T="0">t(s("/component/comp1/mesh/mesh1/feature/ftri1/selection[geom1]")) m(s("set")) ia(1)</actions>
+    <actions T="0">t(s("/component/comp1/mesh/mesh1/feature/ftri1/selection[geom1]")) m(s("set")) ia(1,2)</actions>
+    <actions T="0">t(s("/component/comp1/mesh/mesh1")) m(s("run")) s("ftri1")</actions>
+    <actions T="0">t(s("/component/comp1/mesh/mesh1/feature/ftri1")) m(s("create")) s("size1") s("Size")</actions>
+    <actions T="0">t(s("/component/comp1/mesh/mesh1/feature/ftri1/feature/size1")) m(s("set")) s("custom") b(true)</actions>
+    <actions T="0">t(s("/component/comp1/mesh/mesh1/feature/ftri1/feature/size1")) m(s("set")) s("custom") b(true)</actions>
+    <actions T="0">t(s("/component/comp1/mesh/mesh1/feature/ftri1/feature/size1")) m(s("set")) s("hmaxactive") b(true)</actions>
+    <actions T="0">t(s("/component/comp1/mesh/mesh1/feature/ftri1/feature/size1")) m(s("set")) s("hminactive") b(true)</actions>
+    <actions T="0">t(s("/component/comp1/mesh/mesh1/feature/ftri1/feature/size1")) m(s("set")) s("hmax") d(0.002)</actions>
+    <actions T="0">t(s("/component/comp1/mesh/mesh1/feature/ftri1/feature/size1")) m(s("set")) s("hmin") d(0.002)</actions>
+    <actions T="0">t(s("/component/comp1/mesh/mesh1")) m(s("run")) s("ftri1")</actions>
+    <actions T="0">t(s("/component/comp1/mesh/mesh1/feature/ftri1/feature/size1")) m(s("set")) s("hmax") d(0.003)</actions>
+    <actions T="0">t(s("/component/comp1/mesh/mesh1/feature/ftri1/feature/size1")) m(s("set")) s("hmin") d(0.003)</actions>
+    <actions T="0">t(s("/component/comp1/mesh/mesh1")) m(s("run")) s("ftri1")</actions>
+    <actions T="0">t(s("/component/comp1/mesh/mesh1/export")) m(s("set")) s("type") s("nativeascii")</actions>
+    <actions T="0">t(s("/component/comp1/mesh/mesh1/export")) m(s("set")) s("filename") s("C:\\Work\\Module\\ETH_Physical_Modeling\\Simulation_Projects_HS_2017\\Topic_12_Jentner_Jud\\Mesh_1.mphtxt")</actions>
+    <actions T="0">t(s("/component/comp1/mesh/mesh1")) m(s("export")) s("C:\\Work\\Module\\ETH_Physical_Modeling\\Simulation_Projects_HS_2017\\Topic_12_Jentner_Jud\\Mesh_1.mphtxt")</actions>
+    <actions T="0">t(s("/")) m(s("label")) s("model_1.mph")</actions>
+    <actions T="0">t(s("/component/comp1/geom/geom1/feature")) m(s("remove")) s("mir1")</actions>
+    <actions T="0">t(s("/component/comp1/geom/geom1/feature")) m(s("remove")) s("copy1")</actions>
+    <actions T="0">t(s("/component/comp1/geom/geom1/feature")) m(s("remove")) s("dif1")</actions>
+    <actions T="0">t(s("/component/comp1/geom/geom1/feature")) m(s("remove")) s("pol1")</actions>
+    <actions T="0">t(s("/component/comp1/geom/geom1")) m(s("run")) s("fin")</actions>
+    <actions T="0">t(s("/component/comp1/geom/geom1")) m(s("run")) s("r1")</actions>
+    <actions T="0">t(s("/component/comp1/geom/geom1")) m(s("create")) s("pol1") s("Polygon")</actions>
+    <actions T="0">t(s("/component/comp1/geom/geom1/feature/pol1")) m(s("set")) s("x") s("{0,0.03,0.03,0}")</actions>
+    <actions T="0">t(s("/component/comp1/geom/geom1/feature/pol1")) m(s("set")) s("y") s("{0,-0.01,0.03,0.02}")</actions>
+    <actions T="0">t(s("/component/comp1/geom/geom1")) m(s("run")) s("pol1")</actions>
+    <actions T="0">t(s("/component/comp1/geom/geom1")) m(s("run")) s("pol1")</actions>
+    <actions T="0">t(s("/component/comp1/geom/geom1")) m(s("create")) s("c1") s("Circle")</actions>
+    <actions T="0">t(s("/component/comp1/geom/geom1/feature/c1")) m(s("set")) s("type") s("solid")</actions>
+    <actions T="0">t(s("/component/comp1/geom/geom1/feature/c1")) m(s("set")) s("base") s("center")</actions>
+    <actions T="0">t(s("/component/comp1/geom/geom1/feature/c1")) m(s("set")) s("pos") sa(s("0.03"),s("0.01"))</actions>
+    <actions T="0">t(s("/component/comp1/geom/geom1/feature/c1")) m(s("set")) s("r") s("0.07")</actions>
+    <actions T="0">t(s("/component/comp1/geom/geom1")) m(s("run")) s("c1")</actions>
+    <actions T="0">t(s("/component/comp1/geom/geom1")) m(s("run")) s("c1")</actions>
+    <actions T="0">t(s("/component/comp1/geom/geom1")) m(s("create")) s("r2") s("Rectangle")</actions>
+    <actions T="0">t(s("/component/comp1/geom/geom1/feature/r2")) m(s("set")) s("type") s("solid")</actions>
+    <actions T="0">t(s("/component/comp1/geom/geom1/feature/r2")) m(s("set")) s("base") s("corner")</actions>
+    <actions T="0">t(s("/component/comp1/geom/geom1/feature/r2")) m(s("set")) s("pos") sa(s("-0.04"),s("-0.06"))</actions>
+    <actions T="0">t(s("/component/comp1/geom/geom1/feature/r2")) m(s("set")) s("size") sa(s("0.07"),s("0.14"))</actions>
+    <actions T="0">t(s("/component/comp1/geom/geom1")) m(s("run")) s("r2")</actions>
+    <actions T="0">t(s("/component/comp1/geom/geom1")) m(s("run")) s("r2")</actions>
+    <actions T="0">t(s("/component/comp1/geom/geom1")) m(s("create")) s("dif1") s("Difference")</actions>
+    <actions T="0">t(s("/component/comp1/geom/geom1/feature/dif1/@input/selection[geom1]")) m(s("set")) sa(s("c1"))</actions>
+    <actions T="0">t(s("/component/comp1/geom/geom1/feature/dif1/@input2/selection[geom1]")) m(s("set")) sa(s("r2"))</actions>
+    <actions T="0">t(s("/component/comp1/geom/geom1")) m(s("run")) s("dif1")</actions>
+    <actions T="0">t(s("/component/comp1/geom/geom1")) m(s("run"))</actions>
+    <actions T="0">t(s("/component/comp1/mesh/mesh1/feature/ftri1/selection[geom1]")) m(s("set")) ia(1,2)</actions>
+    <actions T="0">t(s("/component/comp1/mesh/mesh1/feature/ftri1/selection[geom1]")) m(s("set")) ia(1,2,3)</actions>
+    <actions T="0">t(s("/component/comp1/mesh/mesh1/feature/ftri1/feature/size1/selection[geom1]")) m(s("set")) ia(1,2)</actions>
+    <actions T="0">t(s("/component/comp1/mesh/mesh1/feature/ftri1/feature/size1/selection[geom1]")) m(s("set")) ia(1,2,3)</actions>
+    <actions T="0">t(s("/component/comp1/mesh/mesh1")) m(s("run")) s("ftri1")</actions>
+    <actions T="0">t(s("/component/comp1/mesh/mesh1/export")) m(s("set")) s("type") s("nativeascii")</actions>
+    <actions T="0">t(s("/component/comp1/mesh/mesh1/export")) m(s("set")) s("filename") s("C:\\Work\\Module\\ETH_Physical_Modeling\\Simulation_Projects_HS_2017\\Topic_13_Deichmann_Scherrer\\mesh_1.mphtxt")</actions>
+    <actions T="0">t(s("/")) m(s("label")) s("model_1.mph")</actions>
+    <actions T="0">t(s("/component/comp1/mesh/mesh1/export")) m(s("set")) s("type") s("nativeascii")</actions>
+    <actions T="0">t(s("/component/comp1/mesh/mesh1/export")) m(s("set")) s("filename") s("C:\\Work\\Module\\ETH_Physical_Modeling\\Simulation_Projects_HS_2017\\Topic_13_Deichmann_Scherrer\\mesh_1.mphtxt")</actions>
+    <actions T="0">t(s("/component/comp1/mesh/mesh1")) m(s("export")) s("C:\\Work\\Module\\ETH_Physical_Modeling\\Simulation_Projects_HS_2017\\Topic_13_Deichmann_Scherrer\\mesh_1.mphtxt")</actions>
+    <actions T="0">t(s("/")) m(s("label")) s("model_1.mph")</actions>
+    <actions T="0">t(s("/component/comp1/mesh/mesh1/feature/ftri1/feature/size1")) m(s("set")) s("hmax") d(0.001)</actions>
+    <actions T="0">t(s("/component/comp1/mesh/mesh1/feature/ftri1/feature/size1")) m(s("set")) s("hmin") d(0.001)</actions>
+    <actions T="0">t(s("/component/comp1/mesh/mesh1")) m(s("run")) s("ftri1")</actions>
+    <actions T="0">t(s("/component/comp1/mesh/mesh1/feature/ftri1/feature/size1")) m(s("set")) s("hmax") d(0.0015)</actions>
+    <actions T="0">t(s("/component/comp1/mesh/mesh1/feature/ftri1/feature/size1")) m(s("set")) s("hmin") d(0.0015)</actions>
+    <actions T="0">t(s("/component/comp1/mesh/mesh1")) m(s("run")) s("ftri1")</actions>
+    <actions T="0">t(s("/component/comp1/mesh/mesh1/export")) m(s("set")) s("type") s("nativeascii")</actions>
+    <actions T="0">t(s("/component/comp1/mesh/mesh1/export")) m(s("set")) s("filename") s("C:\\Work\\Module\\ETH_Physical_Modeling\\Simulation_Projects_HS_2017\\Topic_13_Deichmann_Scherrer\\mesh_2.mphtxt")</actions>
+    <actions T="0">t(s("/component/comp1/mesh/mesh1")) m(s("export")) s("C:\\Work\\Module\\ETH_Physical_Modeling\\Simulation_Projects_HS_2017\\Topic_13_Deichmann_Scherrer\\mesh_2.mphtxt")</actions>
+    <actions T="0">t(s("/component/comp1/mesh/mesh1")) m(s("export")) s("C:\\Work\\Module\\ETH_Physical_Modeling\\Simulation_Projects_HS_2017\\Topic_13_Deichmann_Scherrer\\mesh_2.mphtxt")</actions>
+  </History>
+  <ModelNodeList tag="modelNode" name="Extra Dimensions">
+    <!-- User comments -->
+    <entityComments T="0"></entityComments>
+    <!-- Created by -->
+    <entityAuthor T="0"></entityAuthor>
+    <!-- Creation time -->
+    <entityCreationTime T="11">1510089324095</entityCreationTime>
+    <ModelNode tag="comp1" name="Component 1">
+      <!-- User comments -->
+      <entityComments T="0"></entityComments>
+      <!-- Created by -->
+      <entityAuthor T="0"></entityAuthor>
+      <!-- Creation time -->
+      <entityCreationTime T="11">1510089324695</entityCreationTime>
+      <!-- Scope identifier -->
+      <identifier T="0">comp1</identifier>
+      <!-- Define local coordinate variables -->
+      <defineLocalCoord T="3">true</defineLocalCoord>
+      <!-- Define all frames -->
+      <defineAllFrames T="3">true</defineAllFrames>
+      <!-- Spatial frame coordinates -->
+      <spatialCoord T="1">3,'x','y','z'</spatialCoord>
+      <!-- Material frame coordinates -->
+      <materialCoord T="1">3,'X','Y','Z'</materialCoord>
+      <!-- Geometry frame coordinates -->
+      <geometryCoord T="1">3,'Xg','Yg','Zg'</geometryCoord>
+      <!-- Mesh frame coordinates -->
+      <meshCoord T="1">3,'Xm','Ym','Zm'</meshCoord>
+    </ModelNode>
+  </ModelNodeList>
+  <AppBuilderFeatureList tag="applicationNodeList" name="List">
+    <!-- User comments -->
+    <entityComments T="0"></entityComments>
+    <!-- Created by -->
+    <entityAuthor T="0"></entityAuthor>
+    <!-- Creation time -->
+    <entityCreationTime T="11">1510089324096</entityCreationTime>
+  </AppBuilderFeatureList>
+  <SolutionData tag="soldata">
+  </SolutionData>
+  <MultiphysicsCouplingList tag="multiphysics" name="List">
+    <!-- User comments -->
+    <entityComments T="0"></entityComments>
+    <!-- Created by -->
+    <entityAuthor T="0"></entityAuthor>
+    <!-- Creation time -->
+    <entityCreationTime T="11">1510089324170</entityCreationTime>
+  </MultiphysicsCouplingList>
+  <CapeOpen tag="capeopen" name="Thermodynamics">
+    <!-- User comments -->
+    <entityComments T="0"></entityComments>
+    <!-- Created by -->
+    <entityAuthor T="0"></entityAuthor>
+    <!-- Creation time -->
+    <entityCreationTime T="11">1510089324320</entityCreationTime>
+    <CapeOpenFeatureList tag="feature" name="Functions">
+      <!-- User comments -->
+      <entityComments T="0"></entityComments>
+      <!-- Created by -->
+      <entityAuthor T="0"></entityAuthor>
+      <!-- Creation time -->
+      <entityCreationTime T="11">1510089324320</entityCreationTime>
+    </CapeOpenFeatureList>
+  </CapeOpen>
+  <ReducedModelList tag="reduced" name="Reduced Models">
+    <!-- User comments -->
+    <entityComments T="0"></entityComments>
+    <!-- Created by -->
+    <entityAuthor T="0"></entityAuthor>
+    <!-- Creation time -->
+    <entityCreationTime T="11">1510089324320</entityCreationTime>
+  </ReducedModelList>
+  <UnitSystemList tag="unitsystem" name="List">
+    <!-- User comments -->
+    <entityComments T="0"></entityComments>
+    <!-- Created by -->
+    <entityAuthor T="0"></entityAuthor>
+    <!-- Creation time -->
+    <entityCreationTime T="11">1510089324320</entityCreationTime>
+  </UnitSystemList>
+  <InformationList tag="information" name="Information">
+    <!-- User comments -->
+    <entityComments T="0"></entityComments>
+    <!-- Created by -->
+    <entityAuthor T="0"></entityAuthor>
+    <!-- Creation time -->
+    <entityCreationTime T="11">1510089324336</entityCreationTime>
+    <Information tag="expectedComputationTime">
+      <title T="0">Expected_computation_time</title>
+      <body T="0"></body>
+    </Information>
+    <Information tag="lastComputationTime">
+      <title T="0">Last_computation_time</title>
+      <body T="0"></body>
+    </Information>
+  </InformationList>
+  <CoordsysList tag="coordsys" name="List">
+    <!-- User comments -->
+    <entityComments T="0"></entityComments>
+    <!-- Created by -->
+    <entityAuthor T="0"></entityAuthor>
+    <!-- Creation time -->
+    <entityCreationTime T="11">1510089324680</entityCreationTime>
+    <Coordsys op="Boundary" tag="sys1" name="Boundary System 1">
+      <!-- Node status -->
+      <entityFlags T="51">NOREMOVE|NODEACTIVATE</entityFlags>
+      <!-- User comments -->
+      <entityComments T="0"></entityComments>
+      <!-- Created by -->
+      <entityAuthor T="0"></entityAuthor>
+      <!-- Creation time -->
+      <entityCreationTime T="11">1510089324695</entityCreationTime>
+      <!-- Geometry -->
+      <geom T="50">/geom/geom1</geom>
+      <!-- Name -->
+      <propertyValue T="30" value="sys1" name="p:name"></propertyValue>
+      <!-- Coordinate names -->
+      <propertyValue T="30" valueMatrix="1|3,'t1','n','to'" name="p:coord"></propertyValue>
+      <!-- Tangent direction -->
+      <propertyValue T="30" valueMatrix="1|2,'root.t1x','root.t1y'" name="p:tangent"></propertyValue>
+      <!-- Create first tangent direction from -->
+      <propertyValue T="30" value="globalCartesianSpatial" name="p:mastersystem" ReferenceContainerList="/coordsys" CompositeIndex="0"></propertyValue>
+      <NodeDefaultValues>3,'p:frametype','p:reversenormal','p:mastercoordsystcomp'</NodeDefaultValues>
+      <FeatureInfoList tag="featureInfo" name="List">
+        <!-- User comments -->
+        <entityComments T="0"></entityComments>
+        <!-- Created by -->
+        <entityAuthor T="0"></entityAuthor>
+        <!-- Creation time -->
+        <entityCreationTime T="11">1510089324695</entityCreationTime>
+        <FeatureInfo tag="info" name="Equation View">
+          <!-- Node status -->
+          <entityFlags T="51">NOREMOVE|NODEACTIVATE</entityFlags>
+          <!-- User comments -->
+          <entityComments T="0"></entityComments>
+          <!-- Created by -->
+          <entityAuthor T="0"></entityAuthor>
+          <!-- Creation time -->
+          <entityCreationTime T="11">1510089324695</entityCreationTime>
+        </FeatureInfo>
+      </FeatureInfoList>
+      <CoordsysList tag="feature" name="List">
+        <!-- User comments -->
+        <entityComments T="0"></entityComments>
+        <!-- Created by -->
+        <entityAuthor T="0"></entityAuthor>
+        <!-- Creation time -->
+        <entityCreationTime T="11">1510089324711</entityCreationTime>
+      </CoordsysList>
+    </Coordsys>
+  </CoordsysList>
+  <SavePointDataList tag="savePointData" name="List">
+    <!-- User comments -->
+    <entityComments T="0"></entityComments>
+    <!-- Created by -->
+    <entityAuthor T="0"></entityAuthor>
+    <!-- Creation time -->
+    <entityCreationTime T="11">1510089324758</entityCreationTime>
+  </SavePointDataList>
+  <ShapeList tag="shape" name="List">
+    <!-- User comments -->
+    <entityComments T="0"></entityComments>
+    <!-- Created by -->
+    <entityAuthor T="0"></entityAuthor>
+    <!-- Creation time -->
+    <entityCreationTime T="11">1510089327340</entityCreationTime>
+    <Shape tag="shape1" name="Derived Shape 1">
+      <!-- Link to generator -->
+      <derivedFrom T="50">/physics/emw/feature/wee1</derivedFrom>
+      <!-- Frame -->
+      <frame T="50">/frame/spatial1</frame>
+      <!-- Expression manipulator -->
+      <timeDerivativeMultiplier T="0">root.comp1.emw.iomega</timeDerivativeMultiplier>
+      <ShapeFeatureList tag="feature" name="List">
+        <!-- User comments -->
+        <entityComments T="0"></entityComments>
+        <!-- Created by -->
+        <entityAuthor T="0"></entityAuthor>
+        <!-- Creation time -->
+        <entityCreationTime T="11">1513341212556</entityCreationTime>
+        <ShapeFeature op="ShCurl" tag="shfun1">
+          <!-- Link to generator -->
+          <derivedFrom T="50">/physics/emw/feature/wee1</derivedFrom>
+          <!-- #Name of field -->
+          <propertyValue T="30" value="comp1.E" name="p:fieldname"></propertyValue>
+          <!-- #Names of components -->
+          <propertyValue T="30" valueMatrix="1|2,'comp1.Ex','comp1.Ey'" name="p:compnames"></propertyValue>
+          <!-- #Base name for degrees of freedom -->
+          <propertyValue T="30" value="comp1.E" name="p:dofbasename"></propertyValue>
+          <!-- #Names of gradient components -->
+          <propertyValue T="30" valueMatrix="1|4,'','','comp1.curlEz',''" name="p:dcompnames"></propertyValue>
+          <!-- #Basis function order -->
+          <propertyValue T="30" value="2" name="p:order"></propertyValue>
+          <NodeDefaultValues>1,'p:sorder'</NodeDefaultValues>
+          <ShapeFeatureList tag="feature" name="List">
+            <!-- User comments -->
+            <entityComments T="0"></entityComments>
+            <!-- Created by -->
+            <entityAuthor T="0"></entityAuthor>
+            <!-- Creation time -->
+            <entityCreationTime T="11">1513341212556</entityCreationTime>
+          </ShapeFeatureList>
+        </ShapeFeature>
+      </ShapeFeatureList>
+    </Shape>
+    <Shape tag="shape2" name="Derived Shape 2">
+      <!-- Link to generator -->
+      <derivedFrom T="50">/physics/emw/feature/wee1</derivedFrom>
+      <!-- Frame -->
+      <frame T="50">/frame/spatial1</frame>
+      <!-- Expression manipulator -->
+      <timeDerivativeMultiplier T="0">root.comp1.emw.iomega</timeDerivativeMultiplier>
+      <ShapeFeatureList tag="feature" name="List">
+        <!-- User comments -->
+        <entityComments T="0"></entityComments>
+        <!-- Created by -->
+        <entityAuthor T="0"></entityAuthor>
+        <!-- Creation time -->
+        <entityCreationTime T="11">1513341212556</entityCreationTime>
+        <ShapeFeature op="ShLag" tag="shfun1">
+          <!-- Link to generator -->
+          <derivedFrom T="50">/physics/emw/feature/wee1</derivedFrom>
+          <!-- #Base variable name -->
+          <propertyValue T="30" value="comp1.Ez" name="p:basename"></propertyValue>
+          <!-- #Basis function order -->
+          <propertyValue T="30" value="2" name="p:order"></propertyValue>
+          <NodeDefaultValues>1,'p:sorder'</NodeDefaultValues>
+          <ShapeFeatureList tag="feature" name="List">
+            <!-- User comments -->
+            <entityComments T="0"></entityComments>
+            <!-- Created by -->
+            <entityAuthor T="0"></entityAuthor>
+            <!-- Creation time -->
+            <entityCreationTime T="11">1513341212556</entityCreationTime>
+          </ShapeFeatureList>
+        </ShapeFeature>
+      </ShapeFeatureList>
+    </Shape>
+  </ShapeList>
+  <InitList tag="init" name="List">
+    <!-- User comments -->
+    <entityComments T="0"></entityComments>
+    <!-- Created by -->
+    <entityAuthor T="0"></entityAuthor>
+    <!-- Creation time -->
+    <entityCreationTime T="11">1510089327371</entityCreationTime>
+    <Init tag="init1" name="Derived Variables 1">
+      <!-- Link to generator -->
+      <derivedFrom T="50">/physics/emw/feature/init1</derivedFrom>
+      <!-- User comments -->
+      <entityComments T="0"></entityComments>
+      <!-- Created by -->
+      <entityAuthor T="0"></entityAuthor>
+      <!-- Creation time -->
+      <entityCreationTime T="11">1513341212743</entityCreationTime>
+      <selection T="32" selection="XDLocalSelection" selType="GEOMDIM">
+        <explicit dim="2" hDim="2" geom="/geom/geom1" entities="4,1,2,3"/>
+      </selection>
+      <!-- Expressions -->
+      <expressions T="31" name="root.comp1.Ex" expr="0"></expressions>
+      <expressions T="31" name="root.comp1.Ey" expr="0"></expressions>
+      <expressions T="31" name="root.comp1.Ez" expr="0"></expressions>
+      <expressions T="31" name="root.comp1.coordinateSystem" expr="GlobalSystem"></expressions>
+    </Init>
+  </InitList>
+  <FileResourceList tag="file" name="List">
+    <!-- User comments -->
+    <entityComments T="0"></entityComments>
+    <!-- Created by -->
+    <entityAuthor T="0"></entityAuthor>
+    <!-- Creation time -->
+    <entityCreationTime T="11">1510089358443</entityCreationTime>
+  </FileResourceList>
+  <ElementSetList tag="elementset" name="List">
+    <!-- User comments -->
+    <entityComments T="0"></entityComments>
+    <!-- Created by -->
+    <entityAuthor T="0"></entityAuthor>
+    <!-- Creation time -->
+    <entityCreationTime T="11">1510256522822</entityCreationTime>
+  </ElementSetList>
+</Model>
+
