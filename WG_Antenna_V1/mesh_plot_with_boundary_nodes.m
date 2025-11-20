@@ -9,7 +9,7 @@ end
 hold on;
 
 for i=1:N_n
-    if (b_node(i) == 1)
+    if (b_nodes(i) == 1)
         plot(x(i), y(i), 'or');
     end
 end

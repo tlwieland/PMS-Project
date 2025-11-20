@@ -2,7 +2,7 @@
 clc;
 clear;
 
-% Load and Prepare given Data |-> New Rep of Mesh - ToDo: Understand!
+% Load and Prepare given Mesh |-> x, y, emt_nodes/dom, b_nodes, b_edges
 load_data;
 
 % Parameter Definitions
@@ -21,8 +21,6 @@ mu_0 = (4*pi)*10^(-7); % Permeability of Free Space
 
 % ToDo - Exclude Nodes between different materials from the set of b_nodes?
 
-%{
-
 figure('Color', [1,1,1]);
 set_figure_1; % Axis + Hold on etc.
 geometry_plot; % Plots the Geometry - Boundary Edges
@@ -32,4 +30,4 @@ set_figure_1; % Axis + Hold on etc.
 mesh_plot_with_boundary_nodes; % Plots Mesh and Boundary Nodes
 axis on;
 
-}%
+% ToDo Matrix Assembly

@@ -29,13 +29,13 @@ end
 
 % Initialize Matrix for Boundary Edges
 for i=1:N_b
-    b_edge(i,1) = bcs(i,1) + 1; % CPP |-> Linalg Indexing
-    b_edge(i,2) = bcs(i,2) + 1; % CPP |-> Linalg Indexing
+    b_edges(i,1) = bcs(i,1) + 1; % CPP |-> Linalg Indexing
+    b_edges(i,2) = bcs(i,2) + 1; % CPP |-> Linalg Indexing
     
     in = bcs(i,1) + 1; % CPP |-> Linalg Indexing
-    b_node(in) = 1; % True if Node is a Boundary Node, False otherwise
+    b_nodes(in) = 1; % True if Node is a Boundary Node, False otherwise
 
     in = bcs(i,2) + 1; % CPP |-> Linalg Indexing
-    b_node(in) = 1; % True if Node is a Boundary Node, False otherwise
+    b_nodes(in) = 1; % True if Node is a Boundary Node, False otherwise
 end
 
